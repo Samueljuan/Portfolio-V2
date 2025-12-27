@@ -1,7 +1,7 @@
 export const profile = {
     name: "Samuel Juan",
     shortName: "Samuel Juan",
-    tabTitle: "Samuel Juan | Product Associate",
+    tabTitle: "Samuel | Product Associate",
     company: "Kick Avenue",
     location: "Jakarta, Indonesia",
     email: "samueljuan0619@gmail.com",
@@ -15,7 +15,7 @@ export const heroPhrases = [
     "QA Automation Expert"
 ]
 
-export const heroSubheadline = `at ${profile.company} • ${profile.location}`
+export const heroSubheadline = "Bridging Business & Engineering | PRD • Figma • QA Automation | Open to Opportunities"
 
 export const experiences = [
     {
