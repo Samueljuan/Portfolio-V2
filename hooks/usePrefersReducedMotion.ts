@@ -13,18 +13,10 @@ export function usePrefersReducedMotion() {
 
         updatePreference(mediaQuery)
 
-        if (mediaQuery.addEventListener) {
-            mediaQuery.addEventListener('change', updatePreference)
-        } else {
-            mediaQuery.addListener(updatePreference)
-        }
+        mediaQuery.addEventListener('change', updatePreference)
 
         return () => {
-            if (mediaQuery.addEventListener) {
-                mediaQuery.removeEventListener('change', updatePreference)
-            } else {
-                mediaQuery.removeListener(updatePreference)
-            }
+            mediaQuery.removeEventListener('change', updatePreference)
         }
     }, [])
 
