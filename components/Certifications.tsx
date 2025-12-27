@@ -7,9 +7,9 @@ export default function Certifications() {
     const { ref, isVisible } = useScrollAnimation()
 
     return (
-        <section id="certifications" className="section">
+        <section id="certifications" className="section" aria-labelledby="certifications-title">
             <div className="container">
-                <h2 className="section-title">Certifications</h2>
+                <h2 id="certifications-title" className="section-title">Certifications</h2>
                 <div
                     ref={ref}
                     className={`${styles.placeholder} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`}

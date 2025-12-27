@@ -3,13 +3,15 @@
 import { useEffect, useState } from 'react'
 import styles from './ThemeToggle.module.css'
 
+type Theme = 'light' | 'dark'
+
 export default function ThemeToggle() {
-    const [theme, setTheme] = useState('dark')
+    const [theme, setTheme] = useState<Theme>('light')
 
     useEffect(() => {
-        // Check local storage or system preference
-        const savedTheme = localStorage.getItem('theme')
-        const initialTheme = savedTheme || 'dark'
+        const savedTheme = localStorage.getItem('theme') as Theme | null
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const initialTheme = savedTheme ?? (systemPrefersDark ? 'dark' : 'light')
 
         setTheme(initialTheme)
         document.documentElement.setAttribute('data-theme', initialTheme)
@@ -26,7 +28,9 @@ export default function ThemeToggle() {
         <button
             onClick={toggleTheme}
             className={styles.toggle}
+            type="button"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            aria-pressed={theme === 'dark'}
         >
             {theme === 'dark' ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

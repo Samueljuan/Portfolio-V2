@@ -1,14 +1,48 @@
-export const profile = {
+export type Profile = {
+    name: string
+    shortName: string
+    tabTitle: string
+    company: string
+    location: string
+    email: string
+    linkedInUrl: string
+    cvUrl: string
+}
+
+export type Experience = {
+    company: string
+    role: string
+    period: string
+    highlights: string[]
+}
+
+export type CaseStudy = {
+    title: string
+    role: string
+    duration: string
+    description: string
+    achievements: string[]
+    tags?: string[]
+    highlight?: boolean
+}
+
+export type SkillGroup = {
+    title: string
+    skills: string[]
+}
+
+export const profile: Profile = {
     name: "Samuel Juan",
     shortName: "Samuel Juan",
     tabTitle: "Samuel | Product Associate",
     company: "Kick Avenue",
     location: "Jakarta, Indonesia",
     email: "samueljuan0619@gmail.com",
-    linkedInUrl: "https://www.linkedin.com/in/samueljuan/"
+    linkedInUrl: "https://www.linkedin.com/in/samueljuan/",
+    cvUrl: "/Samuel-Juan-CV.pdf"
 }
 
-export const heroPhrases = [
+export const heroPhrases: readonly string[] = [
     "Product Associate",
     "Technical PM",
     "End-to-End Owner",
@@ -16,8 +50,35 @@ export const heroPhrases = [
 ]
 
 export const heroSubheadline = "Bridging Business & Engineering | PRD • Figma • QA Automation | Open to Opportunities"
+export const heroSupporting = "Bridging business goals with technical execution through PRD, Figma, and QA automation."
 
-export const experiences = [
+export const proofMetrics = [
+    { value: "15+", label: "PRDs Written" },
+    { value: "100+", label: "Playwright Tests Automated" },
+    { value: "90%+", label: "Sprint Completion Driven" },
+    { value: "95%", label: "Customer Satisfaction Achieved" }
+]
+
+export const proofLogos = [
+    {
+        name: "Kick Avenue",
+        src: "/logos/kick-avenue.png"
+    },
+    {
+        name: "Maranatha University",
+        src: "/logos/maranatha.png"
+    },
+    {
+        name: "KarirLab",
+        src: "/logos/karirlab.png"
+    },
+    {
+        name: "Kampus Merdeka",
+        src: "/logos/kampus-merdeka.png"
+    }
+]
+
+export const experiences: Experience[] = [
     {
         company: "Kick Avenue",
         role: "Product Associate",
@@ -32,7 +93,7 @@ export const experiences = [
     },
     {
         company: "KarirLab",
-        role: "Customer Success & Automation",
+        role: "Customer Success",
         period: "Feb 2023 - Jun 2024",
         highlights: [
             "Maintained **95% customer satisfaction** through feedback loops and proactive support.",
@@ -52,7 +113,7 @@ export const experiences = [
     }
 ]
 
-export const caseStudies = [
+export const caseStudies: CaseStudy[] = [
     {
         title: "Platform Revamp at Kick Avenue",
         role: "Product Associate",
@@ -63,18 +124,20 @@ export const caseStudies = [
             "Reached **90% sprint completion** on reward system improvements.",
             "Built **100+ Playwright** tests and **500+ manual** cases for critical flows."
         ],
+        tags: ["90% Sprint", "100+ Tests", "Full Revamp"],
         highlight: true
     },
     {
         title: "Automation at KarirLab",
-        role: "Customer Success & Automation",
+        role: "Customer Success",
         duration: "2023 - 2024",
         description: "Problem: manual outreach reduced speed. Approach: automated WhatsApp broadcasts with Selenium. Solution: streamlined employer communication flows. Impact: faster delivery with measurable efficiency gains.",
         achievements: [
             "Achieved **96% efficiency improvement** with Selenium automation.",
             "Sustained **95% customer satisfaction** during process changes.",
             "Built a lightweight dashboard to track engagement KPIs."
-        ]
+        ],
+        tags: ["96% Efficiency", "95% Satisfaction"]
     },
     {
         title: "Glints Academy Full-Stack Projects",
@@ -85,7 +148,8 @@ export const caseStudies = [
             "Shipped multiple React.js apps with clean UI and state management.",
             "Integrated REST APIs for authentication and data CRUD flows.",
             "Documented product requirements and demoed working MVPs."
-        ]
+        ],
+        tags: ["React.js Projects", "Front-end"]
     },
     {
         title: "Community Leadership at MSIB",
@@ -96,11 +160,12 @@ export const caseStudies = [
             "Reached **65,000+ students** and **250+ partner representatives**.",
             "Coordinated a festival with 25+ partners across cohorts.",
             "Streamlined program communications and community support."
-        ]
+        ],
+        tags: ["65k+ Students", "National Scale"]
     }
 ]
 
-export const skillGroups = [
+export const skillGroups: SkillGroup[] = [
     {
         title: "Product & Strategy",
         skills: [

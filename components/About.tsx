@@ -12,9 +12,9 @@ export default function About() {
     ]
 
     return (
-        <section id="about" className="section">
+        <section id="about" className="section" aria-labelledby="about-title">
             <div className="container">
-                <h2 className="section-title">About Me</h2>
+                <h2 id="about-title" className="section-title">About Me</h2>
                 <div
                     ref={ref}
                     className={`${styles.content} animate-on-scroll ${isVisible ? 'is-visible' : ''}`}

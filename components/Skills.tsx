@@ -49,9 +49,9 @@ export default function Skills() {
     }
 
     return (
-        <section id="skills" className="section">
+        <section id="skills" className="section" aria-labelledby="skills-title">
             <div className="container">
-                <h2 className="section-title">Skills</h2>
+                <h2 id="skills-title" className="section-title">Skills</h2>
                 <div
                     ref={ref}
                     className={styles.grid}

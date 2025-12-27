@@ -4,57 +4,78 @@ import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { siteConfig } from '@/data/site'
+import { profile } from '@/data/portfolio'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const siteUrl = 'https://portfolio-v2-inky-phi.vercel.app'
-const metaTitle = 'Samuel Juan | Product Associate Portfolio | Technical Product Focus | Jakarta'
-const metaDescription = 'Samuel Juan, Product Associate at Kick Avenue Jakarta. PRD writing, Figma, Playwright QA, Agile leadership. End-to-end delivery; open to freelance.'
-const metaKeywords = 'product associate jakarta, technical product manager indonesia, freelance product manager, prd writing, figma product design, qa automation playwright, agile product management'
-const ogImage = 'https://via.placeholder.com/1200x630?text=Samuel+Juan+Product+Portfolio'
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: metaTitle,
-  description: metaDescription,
-  keywords: metaKeywords,
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: profile.tabTitle,
+    template: '%s',
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  applicationName: `${siteConfig.name} Portfolio`,
+  authors: [{ name: profile.name, url: siteConfig.url }],
+  generator: 'Next.js',
+  creator: profile.name,
+  publisher: profile.name,
+  referrer: 'origin-when-cross-origin',
+  category: 'Portfolio',
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: siteConfig.url,
   },
   openGraph: {
-    title: 'Samuel Juan | Product Associate Portfolio Jakarta',
-    description: metaDescription,
-    url: siteUrl,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
     type: 'website',
+    siteName: `${siteConfig.name} Portfolio`,
     images: [
       {
-        url: ogImage,
+        url: siteConfig.ogImage,
         width: 1200,
         height: 630,
         alt: 'Samuel Juan Product Portfolio',
       },
     ],
-    locale: 'en_US',
-    alternateLocale: ['id_ID'],
+    locale: siteConfig.locale,
+    alternateLocale: [siteConfig.alternateLocale],
   },
   twitter: {
     card: 'summary_large_image',
-    title: metaTitle,
-    description: metaDescription,
-    images: [ogImage],
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
   icons: {
-    icon: 'https://via.placeholder.com/64?text=S',
+    icon: [
+      { url: siteConfig.favicon, type: 'image/x-icon' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: '/icons/icon-192.png',
   },
+  manifest: '/manifest.webmanifest',
 }
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f8fafc' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+  ],
+  colorScheme: 'light dark',
 }
 
 export default function RootLayout({
@@ -65,13 +86,13 @@ export default function RootLayout({
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Samuel Juan',
+    name: profile.name,
     jobTitle: 'Product Associate',
     worksFor: {
       '@type': 'Organization',
-      name: 'Kick Avenue',
+      name: profile.company,
     },
-    url: siteUrl,
+    url: siteConfig.url,
     sameAs: [
       'https://www.linkedin.com/in/samueljuan/',
       'https://github.com/username-kamu',
@@ -93,7 +114,9 @@ export default function RootLayout({
               (function() {
                 try {
                   var localTheme = localStorage.getItem('theme');
-                  document.documentElement.setAttribute('data-theme', localTheme || 'dark');
+                  var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  var theme = localTheme || (systemPrefersDark ? 'dark' : 'light');
+                  document.documentElement.setAttribute('data-theme', theme);
                 } catch (e) {}
               })();
             `,
@@ -102,7 +125,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        <main>{children}</main>
+        <main id="main" tabIndex={-1}>{children}</main>
         <Footer />
       </body>
     </html>

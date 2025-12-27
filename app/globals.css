@@ -37,6 +37,15 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
 }
 
 body {
@@ -60,9 +69,29 @@ a:hover {
   color: var(--primary-hover);
 }
 
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.btnOutline:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
 strong {
   color: var(--primary);
   font-weight: 700;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 /* Utility Classes */
@@ -110,6 +139,7 @@ strong {
 
 .btn-primary:hover {
   background: var(--primary-hover);
+  color: white;
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 12px 28px rgba(124, 58, 237, 0.35);
 }
@@ -167,4 +197,23 @@ strong {
 
 .delay-300 {
   transition-delay: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
 }

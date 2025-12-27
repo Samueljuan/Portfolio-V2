@@ -7,10 +7,10 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
-                <Link href="/" className={styles.logo}>
+                <Link href="/" className={styles.logo} aria-label="Go to homepage">
                     {profile.shortName}
                 </Link>
-                <nav className={styles.nav}>
+                <nav className={styles.nav} aria-label="Primary">
                     <Link href="#about" className={styles.link}>About</Link>
                     <Link href="#experience" className={styles.link}>Experience</Link>
                     <Link href="#projects" className={styles.link}>Case Studies</Link>

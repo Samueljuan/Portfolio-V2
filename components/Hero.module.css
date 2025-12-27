@@ -54,6 +54,13 @@
     vertical-align: text-bottom;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .cursor {
+        animation: none;
+        opacity: 1;
+    }
+}
+
 @keyframes blink {
     0%,
     100% {
@@ -72,6 +79,14 @@
     line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.supporting {
+    font-size: 1rem;
+    color: var(--secondary);
+    margin: 0;
+    line-height: 1.6;
+    max-width: 720px;
 }
 
 .actions {
@@ -116,5 +131,9 @@
 
     .subheadline {
         font-size: 0.9rem;
+    }
+
+    .supporting {
+        font-size: 0.95rem;
     }
 }

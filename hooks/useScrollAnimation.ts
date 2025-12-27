@@ -1,12 +1,18 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { usePrefersReducedMotion } from './usePrefersReducedMotion'
 
 export function useScrollAnimation() {
     const ref = useRef<HTMLDivElement>(null)
     const [isVisible, setIsVisible] = useState(false)
+    const prefersReducedMotion = usePrefersReducedMotion()
 
     useEffect(() => {
+        if (prefersReducedMotion) {
+            setIsVisible(true)
+            return
+        }
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -29,7 +35,7 @@ export function useScrollAnimation() {
                 observer.unobserve(ref.current)
             }
         }
-    }, [])
+    }, [prefersReducedMotion])
 
     return { ref, isVisible }
 }

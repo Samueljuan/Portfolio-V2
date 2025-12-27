@@ -12,8 +12,12 @@ export default function Footer() {
                         © {new Date().getFullYear()} {name}. All rights reserved.
                     </p>
                     <div className={styles.socials}>
-                        <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href={`mailto:${email}`}>Email</a>
+                        <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" aria-label={`${name} on LinkedIn`}>
+                            LinkedIn
+                        </a>
+                        <a href={`mailto:${email}`} aria-label={`Email ${name}`}>
+                            Email
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,31 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePrefersReducedMotion } from './usePrefersReducedMotion'
 
-export function useTypewriter(words: string[], typeSpeed: number = 100, deleteSpeed: number = 50, pauseDuration: number = 2000) {
+export function useTypewriter(words: readonly string[], typeSpeed: number = 100, deleteSpeed: number = 50, pauseDuration: number = 2000) {
     const [index, setIndex] = useState(0)
     const [subIndex, setSubIndex] = useState(0)
     const [reverse, setReverse] = useState(false)
     const [text, setText] = useState('')
+    const prefersReducedMotion = usePrefersReducedMotion()
 
     useEffect(() => {
+        if (!prefersReducedMotion) {
+            return
+        }
+        const fallback = words[0] ?? ''
+        setText(fallback)
+    }, [prefersReducedMotion, words])
+
+    useEffect(() => {
+        if (prefersReducedMotion) {
+            return
+        }
+        if (words.length === 0) {
+            setText('')
+            return
+        }
         if (index >= words.length) {
             setIndex(0)
             return

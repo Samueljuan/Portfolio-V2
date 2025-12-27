@@ -9,9 +9,9 @@ export default function Experience() {
     const { ref, isVisible } = useScrollAnimation()
 
     return (
-        <section id="experience" className="section">
+        <section id="experience" className="section" aria-labelledby="experience-title">
             <div className="container">
-                <h2 className="section-title">Experience</h2>
+                <h2 id="experience-title" className="section-title">Experience</h2>
                 <div
                     ref={ref}
                     className={styles.timeline}

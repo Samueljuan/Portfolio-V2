@@ -9,9 +9,9 @@ export default function Projects() {
     const { ref, isVisible } = useScrollAnimation()
 
     return (
-        <section id="projects" className="section">
+        <section id="projects" className="section" aria-labelledby="projects-title">
             <div className="container">
-                <h2 className="section-title">Case Studies</h2>
+                <h2 id="projects-title" className="section-title">Case Studies</h2>
                 <div
                     ref={ref}
                     className={styles.grid}
@@ -23,6 +23,15 @@ export default function Projects() {
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
                             <div className={styles.body}>
+                                {project.tags && (
+                                    <div className={styles.tags}>
+                                        {project.tags.map((tag) => (
+                                            <span key={tag} className={styles.tag}>
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
                                 <h3 className={styles.title}>{project.title}</h3>
                                 <div className={styles.meta}>
                                     <span className={styles.role}>{project.role}</span>
