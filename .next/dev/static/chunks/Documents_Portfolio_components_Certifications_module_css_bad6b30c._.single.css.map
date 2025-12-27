@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Portfolio/components/Certifications.module.css"],"sourcesContent":[".placeholder {\n    padding: 4rem 2rem;\n    text-align: center;\n    border-radius: 16px;\n    max-width: 800px;\n    margin: 0 auto;\n}\n\n.text {\n    font-size: 1.2rem;\n    color: var(--secondary);\n    font-style: italic;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA"}}]
-}

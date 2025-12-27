@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/About.module.css"],"sourcesContent":[".content {\n    max-width: 820px;\n    margin: 0 auto;\n    display: grid;\n    gap: 1.5rem;\n}\n\n.text {\n    font-size: 1.1rem;\n    color: var(--secondary);\n    line-height: 1.8;\n    margin: 0;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA"}}]
-}

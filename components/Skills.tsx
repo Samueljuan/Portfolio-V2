@@ -1,5 +1,6 @@
 'use client'
 
+import type { ReactElement } from 'react'
 import styles from './Skills.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { skillGroups } from '@/data/portfolio'
@@ -7,7 +8,7 @@ import { skillGroups } from '@/data/portfolio'
 export default function Skills() {
     const { ref, isVisible } = useScrollAnimation()
 
-    const iconMap: Record<string, JSX.Element> = {
+    const iconMap: Partial<Record<string, ReactElement>> = {
         Figma: (
             <svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="9" cy="5.5" r="3.2" fill="currentColor" />

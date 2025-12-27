@@ -1,6 +1,6 @@
 export const profile = {
-    name: "Samuel Juan Pranoto",
-    shortName: "Samuel Juan",
+    name: "Samuel Juan",
+    shortName: "Samuel",
     company: "Kick Avenue",
     location: "Jakarta, Indonesia",
     email: "samueljuan@example.com",
