@@ -2,6 +2,7 @@
 
 import styles from './Skills.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { skillGroups } from '@/data/portfolio'
 
 export default function Skills() {
     const { ref, isVisible } = useScrollAnimation()
@@ -45,93 +46,6 @@ export default function Skills() {
             </svg>
         )
     }
-
-    const skillGroups = [
-        {
-            title: "Product & Strategy",
-            skills: [
-                "Product Management",
-                "Technical Product Management",
-                "Product Development",
-                "PRD Writing",
-                "Requirement Analysis",
-                "User Flows",
-                "Feature Prioritization",
-                "Roadmapping",
-                "Acceptance Criteria",
-                "User Research",
-                "Process Improvement",
-                "Data Analysis"
-            ]
-        },
-        {
-            title: "Agile Delivery",
-            skills: [
-                "Agile Methodologies",
-                "Sprint Planning",
-                "Grooming Sessions",
-                "Daily Stand-ups",
-                "Retrospectives"
-            ]
-        },
-        {
-            title: "QA & Testing",
-            skills: [
-                "Quality Assurance",
-                "Test Automation",
-                "Playwright",
-                "Manual Testing",
-                "Regression Testing",
-                "API Testing",
-                "Postman",
-                "Selenium"
-            ]
-        },
-        {
-            title: "Design & UX",
-            skills: [
-                "User Experience (UX)",
-                "Figma",
-                "Dashboard Design"
-            ]
-        },
-        {
-            title: "Tools & Platforms",
-            skills: [
-                "Jira",
-                "Confluence",
-                "Git",
-                "DBeaver"
-            ]
-        },
-        {
-            title: "Tech Stack",
-            skills: [
-                "React.js",
-                "Next.js",
-                "JavaScript"
-            ]
-        },
-        {
-            title: "Leadership & Communication",
-            skills: [
-                "Cross-Functional Team Leadership",
-                "Stakeholder Communication",
-                "Customer Success Management",
-                "Customer Satisfaction",
-                "Community Management",
-                "Program Coordination",
-                "Crisis Communications"
-            ]
-        },
-        {
-            title: "Languages",
-            skills: [
-                "English",
-                "Bahasa Indonesia"
-            ]
-        }
-    ]
 
     return (
         <section id="skills" className="section">

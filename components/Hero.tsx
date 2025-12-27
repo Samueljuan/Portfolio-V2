@@ -4,15 +4,11 @@ import Link from 'next/link'
 import styles from './Hero.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useTypewriter } from '@/hooks/useTypewriter'
+import { heroPhrases, heroSubheadline } from '@/data/portfolio'
 
 export default function Hero() {
     const { ref, isVisible } = useScrollAnimation()
-    const text = useTypewriter([
-        "a Product Associate",
-        "a Technical Bridge Builder",
-        "an End-to-End Product Owner",
-        "a QA Automation Enthusiast"
-    ], 90, 45, 1800)
+    const text = useTypewriter(heroPhrases, 90, 45, 1800)
 
     return (
         <section className={styles.hero}>
@@ -27,7 +23,7 @@ export default function Hero() {
                             <span className={styles.highlight}>{text}</span>
                             <span className={styles.cursor}>|</span>
                         </h1>
-                        <p className={styles.subheadline}>at Kick Avenue • Jakarta, Indonesia</p>
+                        <p className={styles.subheadline}>{heroSubheadline}</p>
                         <div className={styles.actions}>
                             <Link href="#projects" className="btn btn-primary">
                                 View Case Studies

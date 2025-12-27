@@ -624,3 +624,90 @@ https://nextjs.org/docs/messages/module-not-found
 [01:33:38.064] Server  LOG      ✓ Compiled in 19ms
 [01:33:45.408] Server  LOG      ✓ Compiled in 58ms
 [01:35:45.025] Server  LOG      ✓ Compiled in 122ms
+[01:37:38.529] Server  LOG      ✓ Compiled in 215ms
+[01:37:48.490] Server  LOG      ✓ Compiled in 61ms
+[01:38:02.284] Server  LOG      ✓ Compiled in 15ms
+[01:38:07.335] Server  LOG      ✓ Compiled in 63ms
+[01:38:20.298] Server  LOG      ✓ Compiled in 30ms
+[01:38:26.971] Server  LOG      ✓ Compiled in 10ms
+[01:38:34.996] Server  LOG      ✓ Compiled in 37ms
+[01:38:41.964] Server  LOG      ✓ Compiled in 20ms
+[01:39:12.970] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:12.978] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:12.981] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:39:13.031] Browser ERROR   uncaughtError: TypeError: projects.map is not a function. (In 'projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card} glass animate-on-scroll ${isVisible ? 'is-visible' : ''} ${project.highlight ? __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].highlightCard : ''}`,
+                            style: {
+                                transitionDelay: `${index * 100}ms`
+                            },
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].body,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
+                                        children: project.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Projects.tsx",
+                                        lineNumber: 25,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].meta,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].role,
+                                                children: project.role
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Projects.tsx",
+                                                lineNumber: 27,
+                                                columnNumber: 37
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].duration,
+                                                children: project.duration
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Projects.tsx",
+                                                lineNumber: 28,
+                                                columnNumber: 37
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Projects.tsx",
+                                        lineNumber: 26,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].description,
+                                        children: project.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Projects.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].achievements,
+                                        children: project.achievements.map((achievement)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].achievementItem,
+                                                children: achievement
+                                            }, achievement, false, {
+                                                fileName: "[project]/components/Projects.tsx",
+                                                lineNumber: 33,
+                                                columnNumber: 41
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Projects.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 33
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Projects.tsx",
+                                lineNumber: 24,
+                                columnNumber: 29
+                            }, this)
+                        }, project.title, false, {
+                            fileName: "[project]/components/Projects.tsx",
+                            lineNumber: 19,
+                            columnNumber: 25
+                        }, this))', 'projects.map' is undefined)
+[01:39:29.955] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

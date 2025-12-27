@@ -2,11 +2,11 @@
 
 import styles from './Contact.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { profile } from '@/data/portfolio'
 
 export default function Contact() {
     const { ref, isVisible } = useScrollAnimation()
-    const email = "samueljuan@example.com"
-    const linkedInUrl = "https://www.linkedin.com/in/samueljuan/"
+    const { email, linkedInUrl } = profile
 
     return (
         <section id="contact" className="section">
