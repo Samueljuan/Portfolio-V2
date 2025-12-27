@@ -8,8 +8,8 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Samuel Juan Pranoto | Portfolio',
-  description: 'Product Associate & Full Stack Developer Portfolio',
+  title: 'Samuel Juan Pranoto | Product Associate',
+  description: 'Product Associate at Kick Avenue with a technical focus on PRD, Figma, QA automation, and Agile delivery.',
 }
 
 export default function RootLayout({

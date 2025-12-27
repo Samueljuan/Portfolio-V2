@@ -12,7 +12,8 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <Link href="#about" className={styles.link}>About</Link>
                     <Link href="#experience" className={styles.link}>Experience</Link>
-                    <Link href="#projects" className={styles.link}>Projects</Link>
+                    <Link href="#projects" className={styles.link}>Case Studies</Link>
+                    <Link href="#skills" className={styles.link}>Skills</Link>
                     <Link href="#contact" className={styles.link}>Contact</Link>
                     <ThemeToggle />
                 </nav>

@@ -10,18 +10,18 @@
 
 .content {
     text-align: center;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     z-index: 1;
     position: relative;
 }
 
-.title {
-    font-size: 4.5rem;
+.headline {
+    font-size: clamp(2rem, 3vw + 1.2rem, 3.2rem);
     font-weight: 800;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .highlight {
@@ -52,11 +52,18 @@
     }
 }
 
-.subtitle {
-    font-size: 1.5rem;
+.typewriter {
+    font-size: 1.35rem;
     color: var(--secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
     font-weight: 400;
 }
 
@@ -88,11 +95,11 @@
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 3rem;
+    .typewriter {
+        font-size: 1.1rem;
     }
 
     .subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }

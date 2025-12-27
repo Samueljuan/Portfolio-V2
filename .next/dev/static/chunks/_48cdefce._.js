@@ -454,9 +454,9 @@ function Experience() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: ref,
-                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].timeline} animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].timeline,
                     children: experiences.map((exp, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].item} glass`,
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].item} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
                             style: {
                                 transitionDelay: `${index * 100}ms`
                             },
@@ -510,7 +510,7 @@ function Experience() {
                                     columnNumber: 29
                                 }, this)
                             ]
-                        }, index, true, {
+                        }, exp.company, true, {
                             fileName: "[project]/components/Experience.tsx",
                             lineNumber: 53,
                             columnNumber: 25
@@ -552,6 +552,7 @@ __turbopack_context__.v({
   "body": "Projects-module__K3d-Xa__body",
   "card": "Projects-module__K3d-Xa__card",
   "description": "Projects-module__K3d-Xa__description",
+  "duration": "Projects-module__K3d-Xa__duration",
   "grid": "Projects-module__K3d-Xa__grid",
   "highlightCard": "Projects-module__K3d-Xa__highlightCard",
   "image": "Projects-module__K3d-Xa__image",
@@ -638,7 +639,7 @@ function Projects() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "section-title",
-                    children: "Projects"
+                    children: "Case Studies"
                 }, void 0, false, {
                     fileName: "[project]/components/Projects.tsx",
                     lineNumber: 64,
@@ -646,9 +647,9 @@ function Projects() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: ref,
-                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].grid} animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].grid,
                     children: projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card} glass ${project.highlight ? __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].highlightCard : ''}`,
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card} glass animate-on-scroll ${isVisible ? 'is-visible' : ''} ${project.highlight ? __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].highlightCard : ''}`,
                             style: {
                                 transitionDelay: `${index * 100}ms`
                             },
@@ -658,7 +659,8 @@ function Projects() {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: project.image,
                                         alt: `${project.title} preview`,
-                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].image
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Projects$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].image,
+                                        loading: "lazy"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Projects.tsx",
                                         lineNumber: 76,
@@ -677,7 +679,7 @@ function Projects() {
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/Projects.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 84,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -688,7 +690,7 @@ function Projects() {
                                                     children: project.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Projects.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 86,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -696,13 +698,13 @@ function Projects() {
                                                     children: project.duration
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Projects.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 87,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/Projects.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 85,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -710,7 +712,7 @@ function Projects() {
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/Projects.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 89,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -720,22 +722,22 @@ function Projects() {
                                                     children: achievement
                                                 }, achievement, false, {
                                                     fileName: "[project]/components/Projects.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 92,
                                                     columnNumber: 41
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/Projects.tsx",
-                                            lineNumber: 85,
+                                            lineNumber: 90,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Projects.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 83,
                                     columnNumber: 29
                                 }, this)
                             ]
-                        }, index, true, {
+                        }, project.title, true, {
                             fileName: "[project]/components/Projects.tsx",
                             lineNumber: 70,
                             columnNumber: 25
@@ -769,12 +771,208 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/components/Skills.module.css [app-client] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "card": "Skills-module__P7wDQq__card",
+  "grid": "Skills-module__P7wDQq__grid",
+  "list": "Skills-module__P7wDQq__list",
+  "tag": "Skills-module__P7wDQq__tag",
+  "title": "Skills-module__P7wDQq__title",
+});
+}),
+"[project]/components/Skills.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Skills
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Skills.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useScrollAnimation.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+function Skills() {
+    _s();
+    const { ref, isVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScrollAnimation"])();
+    const skillGroups = [
+        {
+            title: "Product & Strategy",
+            skills: [
+                "Product Management",
+                "Technical Product Management",
+                "Product Development",
+                "PRD Writing",
+                "Requirement Analysis",
+                "User Flows",
+                "Feature Prioritization",
+                "Roadmapping",
+                "Acceptance Criteria",
+                "User Research",
+                "Process Improvement",
+                "Data Analysis"
+            ]
+        },
+        {
+            title: "Agile Delivery",
+            skills: [
+                "Agile Methodologies",
+                "Sprint Planning",
+                "Grooming Sessions",
+                "Daily Stand-ups",
+                "Retrospectives"
+            ]
+        },
+        {
+            title: "QA & Testing",
+            skills: [
+                "Quality Assurance",
+                "Test Automation",
+                "Playwright",
+                "Manual Testing",
+                "Regression Testing",
+                "API Testing",
+                "Postman",
+                "Selenium"
+            ]
+        },
+        {
+            title: "Design & UX",
+            skills: [
+                "User Experience (UX)",
+                "Figma",
+                "Dashboard Design"
+            ]
+        },
+        {
+            title: "Tools & Platforms",
+            skills: [
+                "Jira",
+                "Confluence",
+                "Git",
+                "DBeaver"
+            ]
+        },
+        {
+            title: "Tech Stack",
+            skills: [
+                "React.js",
+                "Next.js",
+                "JavaScript"
+            ]
+        },
+        {
+            title: "Leadership & Communication",
+            skills: [
+                "Cross-Functional Team Leadership",
+                "Stakeholder Communication",
+                "Customer Success Management",
+                "Customer Satisfaction",
+                "Community Management",
+                "Program Coordination",
+                "Crisis Communications"
+            ]
+        },
+        {
+            title: "Languages",
+            skills: [
+                "English",
+                "Bahasa Indonesia"
+            ]
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "skills",
+        className: "section",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "section-title",
+                    children: "Skills"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 99,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: ref,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].grid,
+                    children: skillGroups.map((group, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].card} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
+                            style: {
+                                transitionDelay: `${index * 100}ms`
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
+                                    children: group.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Skills.tsx",
+                                    lineNumber: 110,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].list,
+                                    children: group.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].tag,
+                                            children: skill
+                                        }, skill, false, {
+                                            fileName: "[project]/components/Skills.tsx",
+                                            lineNumber: 113,
+                                            columnNumber: 37
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Skills.tsx",
+                                    lineNumber: 111,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, group.title, true, {
+                            fileName: "[project]/components/Skills.tsx",
+                            lineNumber: 105,
+                            columnNumber: 25
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 100,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 98,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Skills.tsx",
+        lineNumber: 97,
+        columnNumber: 9
+    }, this);
+}
+_s(Skills, "HYNv5rEifZ1S+vJhPkZEtot8gHg=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScrollAnimation"]
+    ];
+});
+_c = Skills;
+var _c;
+__turbopack_context__.k.register(_c, "Skills");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/components/Contact.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
   "actions": "Contact-module__OWeMSG__actions",
   "btnOutline": "Contact-module__OWeMSG__btnOutline",
   "content": "Contact-module__OWeMSG__content",
+  "details": "Contact-module__OWeMSG__details",
   "text": "Contact-module__OWeMSG__text",
 });
 }),
@@ -823,6 +1021,36 @@ function Contact() {
                         lineNumber: 19,
                         columnNumber: 21
                     }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Contact$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].details,
+                        children: [
+                            "Email: ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: `mailto:${email}`,
+                                children: email
+                            }, void 0, false, {
+                                fileName: "[project]/components/Contact.tsx",
+                                lineNumber: 24,
+                                columnNumber: 32
+                            }, this),
+                            " |",
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: linkedInUrl,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: "LinkedIn"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Contact.tsx",
+                                lineNumber: 25,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Contact.tsx",
+                        lineNumber: 23,
+                        columnNumber: 21
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Contact$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].actions,
                         children: [
@@ -832,7 +1060,7 @@ function Contact() {
                                 children: "Email Me"
                             }, void 0, false, {
                                 fileName: "[project]/components/Contact.tsx",
-                                lineNumber: 24,
+                                lineNumber: 30,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -843,13 +1071,13 @@ function Contact() {
                                 children: "LinkedIn"
                             }, void 0, false, {
                                 fileName: "[project]/components/Contact.tsx",
-                                lineNumber: 27,
+                                lineNumber: 33,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Contact.tsx",
-                        lineNumber: 23,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, this)
                 ]
@@ -881,85 +1109,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/components/Certifications.module.css [app-client] (css module)", ((__turbopack_context__) => {
-
-__turbopack_context__.v({
-  "placeholder": "Certifications-module__1N6pqG__placeholder",
-  "text": "Certifications-module__1N6pqG__text",
-});
-}),
-"[project]/components/Certifications.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "default",
-    ()=>Certifications
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Certifications$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Certifications.module.css [app-client] (css module)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useScrollAnimation.ts [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-'use client';
-;
-;
-function Certifications() {
-    _s();
-    const { ref, isVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScrollAnimation"])();
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        id: "certifications",
-        className: "section",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "section-title",
-                    children: "Certifications"
-                }, void 0, false, {
-                    fileName: "[project]/components/Certifications.tsx",
-                    lineNumber: 12,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    ref: ref,
-                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Certifications$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].placeholder} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Certifications$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text,
-                        children: "More certifications coming soon..."
-                    }, void 0, false, {
-                        fileName: "[project]/components/Certifications.tsx",
-                        lineNumber: 17,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/Certifications.tsx",
-                    lineNumber: 13,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/Certifications.tsx",
-            lineNumber: 11,
-            columnNumber: 13
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/components/Certifications.tsx",
-        lineNumber: 10,
-        columnNumber: 9
-    }, this);
-}
-_s(Certifications, "HYNv5rEifZ1S+vJhPkZEtot8gHg=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScrollAnimation"]
-    ];
-});
-_c = Certifications;
-var _c;
-__turbopack_context__.k.register(_c, "Certifications");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 ]);
 
-//# sourceMappingURL=_3a5afcfa._.js.map
+//# sourceMappingURL=_48cdefce._.js.map

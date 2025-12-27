@@ -1,60 +1,16 @@
 /* [project]/components/About.module.css [app-client] (css) */
-.About-module__vqXTeW__grid {
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 4rem;
+.About-module__vqXTeW__content {
+  gap: 1.5rem;
+  max-width: 820px;
+  margin: 0 auto;
   display: grid;
 }
 
 .About-module__vqXTeW__text {
   color: var(--secondary);
+  margin: 0;
   font-size: 1.1rem;
   line-height: 1.8;
-}
-
-.About-module__vqXTeW__text p {
-  margin-bottom: 1.5rem;
-}
-
-.About-module__vqXTeW__skills {
-  border-radius: 16px;
-  padding: 2rem;
-}
-
-.About-module__vqXTeW__skillsTitle {
-  color: var(--foreground);
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.About-module__vqXTeW__skillList {
-  flex-wrap: wrap;
-  gap: .75rem;
-  display: flex;
-}
-
-.About-module__vqXTeW__skillTag {
-  color: var(--primary);
-  background: #6366f11a;
-  border: 1px solid #6366f133;
-  border-radius: 9999px;
-  padding: .5rem 1rem;
-  font-size: .9rem;
-  font-weight: 600;
-  transition: all .2s;
-}
-
-.About-module__vqXTeW__skillTag:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-
-@media (max-width: 768px) {
-  .About-module__vqXTeW__grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
 }
 
 /*# sourceMappingURL=components_About_module_css_bad6b30c._.single.css.map*/

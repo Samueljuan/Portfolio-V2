@@ -46,9 +46,15 @@
     font-style: italic;
 }
 
-.description {
-    color: var(--foreground);
-    line-height: 1.6;
+.bullets {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+.bulletItem {
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 600px) {

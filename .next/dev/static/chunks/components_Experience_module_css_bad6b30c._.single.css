@@ -47,9 +47,15 @@
   display: block;
 }
 
-.Experience-module__HaXZMW__description {
-  color: var(--foreground);
-  line-height: 1.6;
+.Experience-module__HaXZMW__bullets {
+  color: var(--secondary);
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+}
+
+.Experience-module__HaXZMW__bulletItem {
+  margin-bottom: .5rem;
 }
 
 @media (max-width: 600px) {

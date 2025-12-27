@@ -12,7 +12,7 @@
 .Hero-module__Z8hQ_W__content {
   text-align: center;
   z-index: 1;
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
@@ -208,6 +208,7 @@
 }
 
 .Projects-module__K3d-Xa__highlightCard {
+  border: 1px solid #6366f159;
   grid-column: 1 / -1;
 }
 
@@ -250,6 +251,10 @@
   font-weight: 600;
 }
 
+.Projects-module__K3d-Xa__duration {
+  color: var(--secondary);
+}
+
 .Projects-module__K3d-Xa__description {
   color: var(--secondary);
   margin: 0;
@@ -273,6 +278,49 @@
   }
 }
 
+/* [project]/components/Skills.module.css [app-client] (css) */
+.Skills-module__P7wDQq__grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  display: grid;
+}
+
+.Skills-module__P7wDQq__card {
+  border-radius: 16px;
+  height: 100%;
+  padding: 1.75rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.Skills-module__P7wDQq__card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px #0000001f;
+}
+
+.Skills-module__P7wDQq__title {
+  color: var(--foreground);
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.Skills-module__P7wDQq__list {
+  flex-wrap: wrap;
+  gap: .6rem;
+  display: flex;
+}
+
+.Skills-module__P7wDQq__tag {
+  color: var(--primary);
+  background: #6366f11a;
+  border: 1px solid #6366f133;
+  border-radius: 9999px;
+  padding: .4rem .9rem;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
 /* [project]/components/Contact.module.css [app-client] (css) */
 .Contact-module__OWeMSG__content {
   text-align: center;
@@ -287,6 +335,22 @@
   margin-bottom: 3rem;
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+.Contact-module__OWeMSG__details {
+  color: var(--secondary);
+  margin: -2rem 0 2.5rem;
+  font-size: .95rem;
+}
+
+.Contact-module__OWeMSG__details a {
+  color: var(--foreground);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Contact-module__OWeMSG__details a:hover {
+  color: var(--primary);
 }
 
 .Contact-module__OWeMSG__actions {
@@ -326,19 +390,4 @@
   }
 }
 
-/* [project]/components/Certifications.module.css [app-client] (css) */
-.Certifications-module__1N6pqG__placeholder {
-  text-align: center;
-  border-radius: 16px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
-
-.Certifications-module__1N6pqG__text {
-  color: var(--secondary);
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
-/*# sourceMappingURL=components_e7b9f40a._.css.map*/
+/*# sourceMappingURL=components_5c0d8f17._.css.map*/

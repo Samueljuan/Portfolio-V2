@@ -1,0 +1,44 @@
+/* [project]/components/Skills.module.css [app-client] (css) */
+.Skills-module__P7wDQq__grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  display: grid;
+}
+
+.Skills-module__P7wDQq__card {
+  border-radius: 16px;
+  height: 100%;
+  padding: 1.75rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.Skills-module__P7wDQq__card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px #0000001f;
+}
+
+.Skills-module__P7wDQq__title {
+  color: var(--foreground);
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.Skills-module__P7wDQq__list {
+  flex-wrap: wrap;
+  gap: .6rem;
+  display: flex;
+}
+
+.Skills-module__P7wDQq__tag {
+  color: var(--primary);
+  background: #6366f11a;
+  border: 1px solid #6366f133;
+  border-radius: 9999px;
+  padding: .4rem .9rem;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=components_Skills_module_css_bad6b30c._.single.css.map*/

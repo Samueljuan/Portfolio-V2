@@ -5,6 +5,8 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 export default function Contact() {
     const { ref, isVisible } = useScrollAnimation()
+    const email = "samueljuan@example.com"
+    const linkedInUrl = "https://www.linkedin.com/in/samueljuan/"
 
     return (
         <section id="contact" className="section">
@@ -15,20 +17,26 @@ export default function Contact() {
                 >
                     <h2 className="section-title">Get In Touch</h2>
                     <p className={styles.text}>
-                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-                        I'll try my best to get back to you!
+                        Open to Product opportunities in Jakarta or remote. Feel free to reach out for collaboration,
+                        product roles, or a quick conversation.
+                    </p>
+                    <p className={styles.details}>
+                        Email: <a href={`mailto:${email}`}>{email}</a> |{" "}
+                        <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
                     </p>
                     <div className={styles.actions}>
-                        <a href="mailto:samueljuan@example.com" className="btn btn-primary">
-                            Say Hello
+                        <a href={`mailto:${email}`} className="btn btn-primary">
+                            Email Me
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/samueljuan/"
+                            href={linkedInUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.btnOutline}
                         >
-                            LinkedIn Profile
+                            LinkedIn
                         </a>
                     </div>
                 </div>

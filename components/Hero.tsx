@@ -8,9 +8,10 @@ import { useTypewriter } from '@/hooks/useTypewriter'
 export default function Hero() {
     const { ref, isVisible } = useScrollAnimation()
     const text = useTypewriter([
-        "Samuel Juan",
         "a Product Associate",
-        "a Tech Enthusiast"
+        "a Technical Bridge Builder",
+        "an End-to-End Product Owner",
+        "a QA Automation Enthusiast"
     ], 100, 50, 2000)
 
     return (
@@ -20,21 +21,22 @@ export default function Hero() {
                     ref={ref}
                     className={`${styles.content} animate-on-scroll ${isVisible ? 'is-visible' : ''}`}
                 >
-                    <h1 className={styles.title}>
-                        Hi, I'm <span className={styles.highlight}>{text}</span>
-                        <span className={styles.cursor}>|</span>
+                    <h1 className={styles.headline}>
+                        Product Associate at Kick Avenue | Technical Focus: PRD • Figma • QA Automation • Agile | Jakarta, Indonesia
                     </h1>
-                    <p className={`${styles.subtitle} animate - on - scroll delay - 100 ${isVisible ? 'is-visible' : ''} `}>
-                        Product Associate & Full Stack Developer based in Jakarta.
-                        <br />
-                        Building digital products with purpose.
+                    <p className={`${styles.typewriter} animate-on-scroll delay-100 ${isVisible ? 'is-visible' : ''}`}>
+                        I am <span className={styles.highlight}>{text}</span>
+                        <span className={styles.cursor}>|</span>
                     </p>
-                    <div className={`${styles.actions} animate - on - scroll delay - 200 ${isVisible ? 'is-visible' : ''} `}>
+                    <p className={`${styles.subtitle} animate-on-scroll delay-200 ${isVisible ? 'is-visible' : ''}`}>
+                        Translating business goals into shippable product outcomes with clear PRDs, design alignment, and quality automation.
+                    </p>
+                    <div className={`${styles.actions} animate-on-scroll delay-300 ${isVisible ? 'is-visible' : ''}`}>
                         <Link href="#projects" className="btn btn-primary">
-                            View Projects
+                            View Case Studies
                         </Link>
                         <Link href="#contact" className={styles.btnOutline}>
-                            Contact Me
+                            Contact
                         </Link>
                     </div>
                 </div>

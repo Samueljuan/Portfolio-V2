@@ -11,19 +11,33 @@ export default function Experience() {
             company: "Kick Avenue",
             role: "Product Associate",
             period: "Jul 2024 - Present",
-            description: "Managing product lifecycle and cross-functional collaboration. Designing and implementing automation using Playwright to enhance product quality."
+            highlights: [
+                "Owned 15+ PRDs with clear requirements, user flows, and acceptance criteria.",
+                "Built Figma wireframes and aligned stakeholders with engineering on scope and APIs.",
+                "Acted as the technical bridge between product, engineering, and QA teams.",
+                "Shipped reward system improvements with 90% sprint completion rate.",
+                "Delivered 100+ Playwright automated tests and 500+ manual test cases."
+            ]
         },
         {
             company: "KarirLab",
-            role: "Customer Success",
+            role: "Customer Success & Automation",
             period: "Feb 2023 - Jun 2024",
-            description: "Ensured customer satisfaction and success with the platform. Managed relationships and user feedback to drive product improvements."
+            highlights: [
+                "Maintained 95% customer satisfaction through feedback loops and proactive support.",
+                "Automated WhatsApp blast workflows with Selenium for 96% efficiency gains.",
+                "Built an internal dashboard to monitor engagement and operational KPIs."
+            ]
         },
         {
-            company: "Kampus Merdeka",
-            role: "Communication and Community Technology Engagement",
+            company: "MSIB Kampus Merdeka",
+            role: "Communication & Community Engagement",
             period: "Nov 2021 - Dec 2022",
-            description: "Led community engagement initiatives and facilitated technology adoption within the ecosystem."
+            highlights: [
+                "Supported communications for 65k+ students across program cohorts.",
+                "Coordinated engagement with 250 partner representatives.",
+                "Led community initiatives and large-scale coordination efforts."
+            ]
         }
     ]
 
@@ -33,12 +47,12 @@ export default function Experience() {
                 <h2 className="section-title">Experience</h2>
                 <div
                     ref={ref}
-                    className={`${styles.timeline} animate-on-scroll ${isVisible ? 'is-visible' : ''}`}
+                    className={styles.timeline}
                 >
                     {experiences.map((exp, index) => (
                         <div
-                            key={index}
-                            className={`${styles.item} glass`}
+                            key={exp.company}
+                            className={`${styles.item} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`}
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
                             <div className={styles.header}>
@@ -46,7 +60,13 @@ export default function Experience() {
                                 <span className={styles.company}>{exp.company}</span>
                             </div>
                             <span className={styles.period}>{exp.period}</span>
-                            <p className={styles.description}>{exp.description}</p>
+                            <ul className={styles.bullets}>
+                                {exp.highlights.map((highlight) => (
+                                    <li key={highlight} className={styles.bulletItem}>
+                                        {highlight}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>
