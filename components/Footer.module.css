@@ -1,0 +1,39 @@
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    margin-top: auto;
+    background: var(--surface);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials a {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.socials a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

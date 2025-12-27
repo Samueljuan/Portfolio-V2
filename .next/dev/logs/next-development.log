@@ -1,0 +1,4 @@
+[00:00:00.649] Server  WARN     ⚠ "Found lockfile missing swc dependencies," "patching..."
+[00:00:02.659] Server  ERROR    ⨯ Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+[00:00:02.678] Server  ERROR   Error: Failed to get registry from "yarn".
+[00:00:02.850] Server  LOG      ✓ Ready in 2.6s

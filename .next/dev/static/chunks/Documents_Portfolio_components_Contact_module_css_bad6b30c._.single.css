@@ -1,0 +1,54 @@
+/* [project]/Documents/Portfolio/components/Contact.module.css [app-client] (css) */
+.Contact-module__TNHSPa__content {
+  text-align: center;
+  border-radius: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.Contact-module__TNHSPa__text {
+  color: var(--secondary);
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.Contact-module__TNHSPa__actions {
+  justify-content: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.Contact-module__TNHSPa__btnOutline {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  background: none;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  padding: .875rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-flex;
+}
+
+.Contact-module__TNHSPa__btnOutline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: #6366f11a;
+}
+
+@media (max-width: 480px) {
+  .Contact-module__TNHSPa__actions {
+    flex-direction: column;
+  }
+
+  .Contact-module__TNHSPa__content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=Documents_Portfolio_components_Contact_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,99 @@
+/* [project]/components/Hero.module.css [app-client] (css) */
+.Hero-module__Z8hQ_W__hero {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Hero-module__Z8hQ_W__content {
+  text-align: center;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Hero-module__Z8hQ_W__title {
+  letter-spacing: -.03em;
+  margin-bottom: 1.5rem;
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.Hero-module__Z8hQ_W__highlight {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.Hero-module__Z8hQ_W__cursor {
+  background-color: var(--primary);
+  vertical-align: text-bottom;
+  width: 3px;
+  margin-left: 4px;
+  animation: 1s step-end infinite Hero-module__Z8hQ_W__blink;
+  display: inline-block;
+}
+
+@keyframes Hero-module__Z8hQ_W__blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.Hero-module__Z8hQ_W__subtitle {
+  color: var(--secondary);
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.Hero-module__Z8hQ_W__actions {
+  justify-content: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.Hero-module__Z8hQ_W__btnOutline {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  background: none;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  padding: .875rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-flex;
+}
+
+.Hero-module__Z8hQ_W__btnOutline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: #6366f11a;
+}
+
+@media (max-width: 768px) {
+  .Hero-module__Z8hQ_W__title {
+    font-size: 3rem;
+  }
+
+  .Hero-module__Z8hQ_W__subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=components_Hero_module_css_bad6b30c._.single.css.map*/
