@@ -9,19 +9,31 @@
 }
 
 .content {
-    text-align: center;
-    max-width: 960px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
-    z-index: 1;
-    position: relative;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
 }
 
 .headline {
-    font-size: clamp(2rem, 3vw + 1.2rem, 3.2rem);
+    font-size: clamp(2.4rem, 4vw + 1rem, 4.8rem);
     font-weight: 800;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
+    margin: 0;
+    line-height: 1.15;
     letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+}
+
+.prefix {
+    color: var(--foreground);
+    font-weight: 700;
 }
 
 .highlight {
@@ -41,7 +53,6 @@
 }
 
 @keyframes blink {
-
     0%,
     100% {
         opacity: 1;
@@ -52,25 +63,20 @@
     }
 }
 
-.typewriter {
-    font-size: 1.35rem;
+.subheadline {
+    font-size: 1.05rem;
     color: var(--secondary);
-    margin-bottom: 1rem;
+    margin: 0;
     line-height: 1.6;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: var(--secondary);
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .actions {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btnOutline {
@@ -94,12 +100,18 @@
     background: rgba(99, 102, 241, 0.1);
 }
 
-@media (max-width: 768px) {
-    .typewriter {
-        font-size: 1.1rem;
+@media (max-width: 900px) {
+    .actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: clamp(2rem, 8vw, 3rem);
     }
 
-    .subtitle {
-        font-size: 1rem;
+    .subheadline {
+        font-size: 0.9rem;
     }
 }

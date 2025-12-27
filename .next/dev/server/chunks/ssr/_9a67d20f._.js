@@ -1,19 +1,4 @@
 module.exports = [
-"[project]/components/Hero.module.css [app-ssr] (css module)", ((__turbopack_context__) => {
-
-__turbopack_context__.v({
-  "actions": "Hero-module__Z8hQ_W__actions",
-  "blink": "Hero-module__Z8hQ_W__blink",
-  "btnOutline": "Hero-module__Z8hQ_W__btnOutline",
-  "content": "Hero-module__Z8hQ_W__content",
-  "cursor": "Hero-module__Z8hQ_W__cursor",
-  "headline": "Hero-module__Z8hQ_W__headline",
-  "hero": "Hero-module__Z8hQ_W__hero",
-  "highlight": "Hero-module__Z8hQ_W__highlight",
-  "subtitle": "Hero-module__Z8hQ_W__subtitle",
-  "typewriter": "Hero-module__Z8hQ_W__typewriter",
-});
-}),
 "[project]/hooks/useScrollAnimation.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -127,7 +112,11 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Hero.module.css [app-ssr] (css module)");
+(()=>{
+    const e = new Error("Cannot find module './Hero.module.css'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useScrollAnimation.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useTypewriter$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useTypewriter.ts [app-ssr] (ecmascript)");
 'use client';
@@ -139,86 +128,103 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useTypewriter$2e$ts
 function Hero() {
     const { ref, isVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScrollAnimation"])();
     const text = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useTypewriter$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTypewriter"])([
-        "a Product Associate",
-        "a Technical Bridge Builder",
-        "an End-to-End Product Owner",
-        "a QA Automation Enthusiast"
+        "Product Associate",
+        "Technical Bridge Builder",
+        "End-to-End Product Owner",
+        "QA Automation Enthusiast"
     ], 90, 45, 1800);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].hero,
+        className: styles.hero,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: ref,
-                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].content} animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
+                className: `${styles.content} animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].headline,
-                        children: "Product Associate at Kick Avenue | Technical Focus: PRD • Figma • QA Automation • Agile | Jakarta, Indonesia"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 24,
-                        columnNumber: 21
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].typewriter} animate-on-scroll delay-100 ${isVisible ? 'is-visible' : ''}`,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: styles.text,
                         children: [
-                            "I am ",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].highlight,
-                                children: text
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: styles.headline,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: styles.highlight,
+                                        children: text
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Hero.tsx",
+                                        lineNumber: 26,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: styles.cursor,
+                                        children: "|"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Hero.tsx",
+                                        lineNumber: 27,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/Hero.tsx",
-                                lineNumber: 28,
-                                columnNumber: 30
+                                lineNumber: 25,
+                                columnNumber: 25
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].cursor,
-                                children: "|"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: styles.subheadline,
+                                children: "at Kick Avenue • Jakarta, Indonesia"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.tsx",
                                 lineNumber: 29,
                                 columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: styles.actions,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "#projects",
+                                        className: "btn btn-primary",
+                                        children: "View Case Studies"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Hero.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "#contact",
+                                        className: styles.btnOutline,
+                                        children: "Contact"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Hero.tsx",
+                                        lineNumber: 34,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Hero.tsx",
+                                lineNumber: 30,
+                                columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 27,
-                        columnNumber: 21
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].subtitle} animate-on-scroll delay-200 ${isVisible ? 'is-visible' : ''}`,
-                        children: "Translating business goals into shippable product outcomes with clear PRDs, design alignment, and quality automation."
-                    }, void 0, false, {
-                        fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 31,
+                        lineNumber: 24,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].actions} animate-on-scroll delay-300 ${isVisible ? 'is-visible' : ''}`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "#projects",
-                                className: "btn btn-primary",
-                                children: "View Case Studies"
-                            }, void 0, false, {
-                                fileName: "[project]/components/Hero.tsx",
-                                lineNumber: 35,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "#contact",
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].btnOutline,
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "[project]/components/Hero.tsx",
-                                lineNumber: 38,
-                                columnNumber: 25
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        className: styles.photoWrapper,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: "https://via.placeholder.com/360x360?text=Your+Photo",
+                            alt: "Profile placeholder",
+                            className: styles.photo,
+                            loading: "lazy"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 41,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 34,
+                        lineNumber: 39,
                         columnNumber: 21
                     }, this)
                 ]
@@ -681,6 +687,435 @@ function Projects() {
     }, this);
 }
 }),
+"[project]/components/Skills.module.css [app-ssr] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "card": "Skills-module__P7wDQq__card",
+  "grid": "Skills-module__P7wDQq__grid",
+  "icon": "Skills-module__P7wDQq__icon",
+  "list": "Skills-module__P7wDQq__list",
+  "tag": "Skills-module__P7wDQq__tag",
+  "title": "Skills-module__P7wDQq__title",
+});
+}),
+"[project]/components/Skills.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Skills
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/Skills.module.css [app-ssr] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/useScrollAnimation.ts [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+function Skills() {
+    const { ref, isVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$useScrollAnimation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScrollAnimation"])();
+    const iconMap = {
+        Figma: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "9",
+                    cy: "5.5",
+                    r: "3.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "9",
+                    cy: "12",
+                    r: "3.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "9",
+                    cy: "18.5",
+                    r: "3.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "15",
+                    cy: "8.5",
+                    r: "3.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "15",
+                    cy: "15.5",
+                    r: "3.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 16,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 11,
+            columnNumber: 13
+        }, this),
+        Playwright: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                    x: "3",
+                    y: "4",
+                    width: "8",
+                    height: "8",
+                    rx: "1.5",
+                    fill: "currentColor",
+                    opacity: "0.8"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 21,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                    x: "13",
+                    y: "12",
+                    width: "8",
+                    height: "8",
+                    rx: "1.5",
+                    fill: "currentColor",
+                    opacity: "0.8"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 22,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M11 13l4 2.5-4 2.5z",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 23,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 20,
+            columnNumber: 13
+        }, this),
+        Jira: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M12 3l6 6-6 6-6-6 6-6z",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 28,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M12 13l4 4-4 4-4-4 4-4z",
+                    fill: "currentColor",
+                    opacity: "0.7"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 29,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 27,
+            columnNumber: 13
+        }, this),
+        "React.js": /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "12",
+                    cy: "12",
+                    r: "2.2",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 34,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "12",
+                    cy: "12",
+                    rx: "9",
+                    ry: "3.5",
+                    fill: "none",
+                    stroke: "currentColor",
+                    strokeWidth: "1.4"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 35,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "12",
+                    cy: "12",
+                    rx: "9",
+                    ry: "3.5",
+                    fill: "none",
+                    stroke: "currentColor",
+                    strokeWidth: "1.4",
+                    transform: "rotate(60 12 12)"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 36,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                    cx: "12",
+                    cy: "12",
+                    rx: "9",
+                    ry: "3.5",
+                    fill: "none",
+                    stroke: "currentColor",
+                    strokeWidth: "1.4",
+                    transform: "rotate(120 12 12)"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 37,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 33,
+            columnNumber: 13
+        }, this),
+        Postman: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "12",
+                    cy: "12",
+                    r: "9",
+                    fill: "none",
+                    stroke: "currentColor",
+                    strokeWidth: "1.6"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 42,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "15",
+                    cy: "9",
+                    r: "1.4",
+                    fill: "currentColor"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 43,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M9 14l6-3",
+                    stroke: "currentColor",
+                    strokeWidth: "1.6",
+                    strokeLinecap: "round"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 44,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 41,
+            columnNumber: 13
+        }, this)
+    };
+    const skillGroups = [
+        {
+            title: "Product & Strategy",
+            skills: [
+                "Product Management",
+                "Technical Product Management",
+                "Product Development",
+                "PRD Writing",
+                "Requirement Analysis",
+                "User Flows",
+                "Feature Prioritization",
+                "Roadmapping",
+                "Acceptance Criteria",
+                "User Research",
+                "Process Improvement",
+                "Data Analysis"
+            ]
+        },
+        {
+            title: "Agile Delivery",
+            skills: [
+                "Agile Methodologies",
+                "Sprint Planning",
+                "Grooming Sessions",
+                "Daily Stand-ups",
+                "Retrospectives"
+            ]
+        },
+        {
+            title: "QA & Testing",
+            skills: [
+                "Quality Assurance",
+                "Test Automation",
+                "Playwright",
+                "Manual Testing",
+                "Regression Testing",
+                "API Testing",
+                "Postman",
+                "Selenium"
+            ]
+        },
+        {
+            title: "Design & UX",
+            skills: [
+                "User Experience (UX)",
+                "Figma",
+                "Dashboard Design"
+            ]
+        },
+        {
+            title: "Tools & Platforms",
+            skills: [
+                "Jira",
+                "Confluence",
+                "Git",
+                "DBeaver"
+            ]
+        },
+        {
+            title: "Tech Stack",
+            skills: [
+                "React.js",
+                "Next.js",
+                "JavaScript"
+            ]
+        },
+        {
+            title: "Leadership & Communication",
+            skills: [
+                "Cross-Functional Team Leadership",
+                "Stakeholder Communication",
+                "Customer Success Management",
+                "Customer Satisfaction",
+                "Community Management",
+                "Program Coordination",
+                "Crisis Communications"
+            ]
+        },
+        {
+            title: "Languages",
+            skills: [
+                "English",
+                "Bahasa Indonesia"
+            ]
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "skills",
+        className: "section",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "section-title",
+                    children: "Skills"
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 139,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: ref,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].grid,
+                    children: skillGroups.map((group, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].card} glass animate-on-scroll ${isVisible ? 'is-visible' : ''}`,
+                            style: {
+                                transitionDelay: `${index * 100}ms`
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].title,
+                                    children: group.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Skills.tsx",
+                                    lineNumber: 150,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].list,
+                                    children: group.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].tag,
+                                            children: [
+                                                iconMap[skill] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].icon,
+                                                    children: iconMap[skill]
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Skills.tsx",
+                                                    lineNumber: 154,
+                                                    columnNumber: 60
+                                                }, this),
+                                                skill
+                                            ]
+                                        }, skill, true, {
+                                            fileName: "[project]/components/Skills.tsx",
+                                            lineNumber: 153,
+                                            columnNumber: 37
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Skills.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, group.title, true, {
+                            fileName: "[project]/components/Skills.tsx",
+                            lineNumber: 145,
+                            columnNumber: 25
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Skills.tsx",
+                    lineNumber: 140,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Skills.tsx",
+            lineNumber: 138,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Skills.tsx",
+        lineNumber: 137,
+        columnNumber: 9
+    }, this);
+}
+}),
 "[project]/components/Contact.module.css [app-ssr] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
@@ -728,7 +1163,7 @@ function Contact() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Contact$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].text,
-                        children: "Open to Product opportunities in Jakarta or remote. Feel free to reach out for collaboration, product roles, or a quick conversation."
+                        children: "Open to Product opportunities in Jakarta/remote. Feel free to reach out for collaboration, product roles, or a quick conversation."
                     }, void 0, false, {
                         fileName: "[project]/components/Contact.tsx",
                         lineNumber: 19,
@@ -813,4 +1248,4 @@ function Contact() {
 }),
 ];
 
-//# sourceMappingURL=_2acb32e4._.js.map
+//# sourceMappingURL=_9a67d20f._.js.map

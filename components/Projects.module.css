@@ -24,18 +24,6 @@
     border: 1px solid rgba(99, 102, 241, 0.35);
 }
 
-.imageWrapper {
-    width: 100%;
-    background: rgba(15, 23, 42, 0.4);
-    border-bottom: 1px solid var(--border);
-}
-
-.image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .body {
     padding: 2rem;
     display: flex;

@@ -17,7 +17,7 @@ export default function Contact() {
                 >
                     <h2 className="section-title">Get In Touch</h2>
                     <p className={styles.text}>
-                        Open to Product opportunities in Jakarta or remote. Feel free to reach out for collaboration,
+                        Open to Product opportunities in Jakarta/remote. Feel free to reach out for collaboration,
                         product roles, or a quick conversation.
                     </p>
                     <p className={styles.details}>

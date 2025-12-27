@@ -25,18 +25,6 @@
   grid-column: 1 / -1;
 }
 
-.Projects-module__K3d-Xa__imageWrapper {
-  border-bottom: 1px solid var(--border);
-  background: #0f172a66;
-  width: 100%;
-}
-
-.Projects-module__K3d-Xa__image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .Projects-module__K3d-Xa__body {
   flex-direction: column;
   gap: 1rem;

@@ -6,16 +6,7 @@ export function useTypewriter(words: string[], typeSpeed: number = 100, deleteSp
     const [index, setIndex] = useState(0)
     const [subIndex, setSubIndex] = useState(0)
     const [reverse, setReverse] = useState(false)
-    const [blink, setBlink] = useState(true)
     const [text, setText] = useState('')
-
-    // Blinking cursor effect
-    useEffect(() => {
-        const timeout2 = setTimeout(() => {
-            setBlink((prev) => !prev)
-        }, 500)
-        return () => clearTimeout(timeout2)
-    }, [blink])
 
     useEffect(() => {
         if (index >= words.length) {
@@ -23,30 +14,27 @@ export function useTypewriter(words: string[], typeSpeed: number = 100, deleteSp
             return
         }
 
-        if (subIndex === words[index].length + 1 && !reverse) {
-            setReverse(true)
-            return
+        const currentWord = words[index]
+        setText(currentWord.substring(0, subIndex))
+
+        if (!reverse && subIndex === currentWord.length) {
+            const pauseTimeout = setTimeout(() => {
+                setReverse(true)
+            }, pauseDuration)
+            return () => clearTimeout(pauseTimeout)
         }
 
-        if (subIndex === 0 && reverse) {
+        if (reverse && subIndex === 0) {
             setReverse(false)
             setIndex((prev) => (prev + 1) % words.length)
             return
         }
 
+        const jitter = Math.floor(Math.random() * 120)
+        const baseSpeed = reverse ? deleteSpeed : typeSpeed
         const timeout = setTimeout(() => {
-            setText(words[index].substring(0, subIndex))
             setSubIndex((prev) => prev + (reverse ? -1 : 1))
-        }, Math.max(reverse ? deleteSpeed : typeSpeed, parseInt(Math.random() * 350 as any))) // Random typing speed for realism
-
-        // Pause at the end of the word
-        if (!reverse && subIndex === words[index].length) {
-            clearTimeout(timeout)
-            setTimeout(() => {
-                setReverse(true)
-            }, pauseDuration)
-            return
-        }
+        }, Math.max(baseSpeed, jitter))
 
         return () => clearTimeout(timeout)
     }, [subIndex, index, reverse, words, typeSpeed, deleteSpeed, pauseDuration])

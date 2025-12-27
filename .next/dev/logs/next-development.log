@@ -26,3 +26,601 @@
 [01:14:47.866] Server  LOG      ✓ Compiled in 30ms
 [01:15:02.905] Server  LOG      ✓ Compiled in 7ms
 [01:15:18.520] Server  LOG      ✓ Compiled in 24ms
+[01:24:00.898] Server  LOG      ✓ Compiled in 163ms
+[01:24:04.938] Server  LOG      ✓ Compiled in 20ms
+[01:24:26.842] Server  LOG      ✓ Compiled in 39ms
+[01:24:32.633] Server  LOG      ✓ Compiled in 40ms
+[01:25:02.720] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Home`.
+[01:25:03.111] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:25:03.117] Server  LOG      ✓ Compiled in 36ms
+[01:25:09.917] Server  LOG      ✓ Compiled in 5ms
+[01:25:14.833] Server  LOG      ✓ Compiled in 3ms
+[01:28:45.934] Server  LOG      ✓ Compiled in 146ms
+[01:29:13.797] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.805] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.810] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.814] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.821] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.826] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.827] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.833] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.837] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.838] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.840] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.841] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.844] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.845] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.846] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.847] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.853] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.854] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.856] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.856] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.857] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.858] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.858] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.859] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.860] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.861] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.861] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.862] Server  ERROR    ⨯ ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:29:13.920] Browser ERROR   ./components/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.module.css'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import styles from './Hero.module.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+  6 | import { useTypewriter } from '@/hooks/useTypewriter'
+  7 |
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:29:34.017] Server  LOG      ✓ Compiled in 89ms
+[01:31:06.974] Server  LOG      ✓ Compiled in 138ms
+[01:31:16.403] Server  LOG      ✓ Compiled in 37ms
+[01:31:29.595] Server  LOG      ✓ Compiled in 8ms
+[01:31:35.538] Server  LOG      ✓ Compiled in 5ms
+[01:31:40.350] Server  LOG      ✓ Compiled in 5ms
+[01:33:30.360] Server  LOG      ✓ Compiled in 129ms
+[01:33:38.064] Server  LOG      ✓ Compiled in 19ms
+[01:33:45.408] Server  LOG      ✓ Compiled in 58ms
+[01:35:45.025] Server  LOG      ✓ Compiled in 122ms

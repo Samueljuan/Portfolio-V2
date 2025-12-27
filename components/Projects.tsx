@@ -17,7 +17,6 @@ export default function Projects() {
                 "Reached 90% sprint completion on reward system improvements.",
                 "Built 100+ Playwright tests and 500+ manual cases for critical flows."
             ],
-            image: "https://via.placeholder.com/800x400?text=Kick+Avenue+Figma+Wireframe",
             highlight: true
         },
         {
@@ -29,8 +28,7 @@ export default function Projects() {
                 "Achieved 96% efficiency improvement with Selenium automation.",
                 "Sustained 95% customer satisfaction during process changes.",
                 "Built a lightweight dashboard to track engagement KPIs."
-            ],
-            image: "https://via.placeholder.com/800x400?text=KarirLab+Automation"
+            ]
         },
         {
             title: "Glints Academy Full-Stack Projects",
@@ -41,8 +39,7 @@ export default function Projects() {
                 "Shipped multiple React.js apps with clean UI and state management.",
                 "Integrated REST APIs for authentication and data CRUD flows.",
                 "Documented product requirements and demoed working MVPs."
-            ],
-            image: "https://via.placeholder.com/800x400?text=Glints+Academy+Projects"
+            ]
         },
         {
             title: "Community Leadership at MSIB",
@@ -53,8 +50,7 @@ export default function Projects() {
                 "Reached 65k+ students and 250 partner representatives.",
                 "Coordinated a festival with 25+ partners across cohorts.",
                 "Streamlined program communications and community support."
-            ],
-            image: "https://via.placeholder.com/800x400?text=MSIB+Community+Festival"
+            ]
         }
     ]
 
@@ -72,14 +68,6 @@ export default function Projects() {
                             className={`${styles.card} glass animate-on-scroll ${isVisible ? 'is-visible' : ''} ${project.highlight ? styles.highlightCard : ''}`}
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
-                            <div className={styles.imageWrapper}>
-                                <img
-                                    src={project.image}
-                                    alt={`${project.title} preview`}
-                                    className={styles.image}
-                                    loading="lazy"
-                                />
-                            </div>
                             <div className={styles.body}>
                                 <h3 className={styles.title}>{project.title}</h3>
                                 <div className={styles.meta}>
