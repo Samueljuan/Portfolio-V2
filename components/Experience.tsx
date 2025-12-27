@@ -3,6 +3,7 @@
 import styles from './Experience.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { experiences } from '@/data/portfolio'
+import { renderWithEmphasis } from '@/utils/text'
 
 export default function Experience() {
     const { ref, isVisible } = useScrollAnimation()
@@ -29,7 +30,7 @@ export default function Experience() {
                             <ul className={styles.bullets}>
                                 {exp.highlights.map((highlight) => (
                                     <li key={highlight} className={styles.bulletItem}>
-                                        {highlight}
+                                        {renderWithEmphasis(highlight)}
                                     </li>
                                 ))}
                             </ul>

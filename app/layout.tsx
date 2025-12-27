@@ -4,11 +4,12 @@ import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { profile } from '@/data/portfolio'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Samuel | Product Associate',
+  title: profile.tabTitle,
   description: 'Product Associate at Kick Avenue with a technical focus on PRD, Figma, QA automation, and Agile delivery.',
 }
 
@@ -26,8 +27,6 @@ export default function RootLayout({
               (function() {
                 try {
                   var localTheme = localStorage.getItem('theme');
-                  var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-                  if (!localTheme && supportDarkMode) document.documentElement.setAttribute('data-theme', 'dark');
                   if (localTheme) document.documentElement.setAttribute('data-theme', localTheme);
                 } catch (e) {}
               })();

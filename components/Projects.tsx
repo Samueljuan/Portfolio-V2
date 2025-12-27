@@ -3,6 +3,7 @@
 import styles from './Projects.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { caseStudies } from '@/data/portfolio'
+import { renderWithEmphasis } from '@/utils/text'
 
 export default function Projects() {
     const { ref, isVisible } = useScrollAnimation()
@@ -27,11 +28,11 @@ export default function Projects() {
                                     <span className={styles.role}>{project.role}</span>
                                     <span className={styles.duration}>{project.duration}</span>
                                 </div>
-                                <p className={styles.description}>{project.description}</p>
+                                <p className={styles.description}>{renderWithEmphasis(project.description)}</p>
                                 <ul className={styles.achievements}>
                                     {project.achievements.map((achievement) => (
                                         <li key={achievement} className={styles.achievementItem}>
-                                            {achievement}
+                                            {renderWithEmphasis(achievement)}
                                         </li>
                                     ))}
                                 </ul>

@@ -2,12 +2,13 @@
 
 import styles from './About.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { renderWithEmphasis } from '@/utils/text'
 
 export default function About() {
     const { ref, isVisible } = useScrollAnimation()
     const aboutCopy = [
-        "Product Associate at Kick Avenue with a technical focus on PRD creation, requirement analysis, and cross-functional execution. I translate business goals into clear user flows, acceptance criteria, and delivery plans that keep engineering and stakeholders aligned.",
-        "My experience spans product delivery, QA automation, and customer success. I build Playwright suites to safeguard releases, collaborate in Agile rituals, and use data-informed insights to improve user experience and operational outcomes."
+        "Product Associate with strong technical execution across product development, QA (manual + automation), UI/UX design, and engineering collaboration. Computer Science graduate (**3.91/4.00 GPA**) experienced leading **6–10 engineers** during a full-platform revamp at Kick Avenue, delivering **15+ PRDs**, scalable flows, and **100+ Playwright** automated test cases.",
+        "Bridge business and engineering through deep understanding of frontend behaviors, API structures, edge cases, and system constraints. Own product flows end-to-end—from requirement to design to QA to deployment. Previously achieved **95% customer satisfaction** at KarirLab and led **250+ representatives** serving **12,900** MSIB participants."
     ]
 
     return (
@@ -20,7 +21,7 @@ export default function About() {
                 >
                     {aboutCopy.map((paragraph) => (
                         <p key={paragraph} className={styles.text}>
-                            {paragraph}
+                            {renderWithEmphasis(paragraph)}
                         </p>
                     ))}
                 </div>

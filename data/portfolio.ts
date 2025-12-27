@@ -1,17 +1,18 @@
 export const profile = {
     name: "Samuel Juan",
-    shortName: "Samuel",
+    shortName: "Samuel Juan",
+    tabTitle: "Samuel Juan | Product Associate",
     company: "Kick Avenue",
     location: "Jakarta, Indonesia",
-    email: "samueljuan@example.com",
+    email: "samueljuan0619@gmail.com",
     linkedInUrl: "https://www.linkedin.com/in/samueljuan/"
 }
 
 export const heroPhrases = [
-    "a Product Associate",
-    "a Technical Bridge Builder",
-    "an End-to-End Product Owner",
-    "a QA Automation Enthusiast"
+    "Product Associate",
+    "Technical PM",
+    "End-to-End Owner",
+    "QA Automation Expert"
 ]
 
 export const heroSubheadline = `at ${profile.company} • ${profile.location}`
@@ -22,11 +23,11 @@ export const experiences = [
         role: "Product Associate",
         period: "Jul 2024 - Present",
         highlights: [
-            "Owned 15+ PRDs with clear requirements, user flows, and acceptance criteria.",
-            "Built Figma wireframes and aligned stakeholders with engineering on scope and APIs.",
-            "Acted as the technical bridge between product, engineering, and QA teams.",
-            "Shipped reward system improvements with 90% sprint completion rate.",
-            "Delivered 100+ Playwright automated tests and 500+ manual test cases."
+            "Led **15+ PRDs** with clear requirements, user flows, and acceptance criteria.",
+            "Aligned Figma wireframes with engineering on scope, APIs, and edge cases.",
+            "Bridged product, engineering, and QA to remove delivery blockers.",
+            "Shipped reward system improvements with **90% sprint completion**.",
+            "Delivered **100+ Playwright** automated tests and **500+ manual** test cases."
         ]
     },
     {
@@ -34,8 +35,8 @@ export const experiences = [
         role: "Customer Success & Automation",
         period: "Feb 2023 - Jun 2024",
         highlights: [
-            "Maintained 95% customer satisfaction through feedback loops and proactive support.",
-            "Automated WhatsApp blast workflows with Selenium for 96% efficiency gains.",
+            "Maintained **95% customer satisfaction** through feedback loops and proactive support.",
+            "Automated WhatsApp blast workflows with Selenium for **96% efficiency** gains.",
             "Built an internal dashboard to monitor engagement and operational KPIs."
         ]
     },
@@ -44,8 +45,8 @@ export const experiences = [
         role: "Communication & Community Engagement",
         period: "Nov 2021 - Dec 2022",
         highlights: [
-            "Supported communications for 65k+ students across program cohorts.",
-            "Coordinated engagement with 250 partner representatives.",
+            "Supported communications for **65,000+ students** across program cohorts.",
+            "Coordinated engagement with **250+ partner representatives**.",
             "Led community initiatives and large-scale coordination efforts."
         ]
     }
@@ -56,11 +57,11 @@ export const caseStudies = [
         title: "Platform Revamp at Kick Avenue",
         role: "Product Associate",
         duration: "2024 - Present",
-        description: "Problem: legacy platform workflows slowed delivery. Approach: authored PRDs, mapped user flows in Figma, and aligned APIs with engineering. Solution: redesigned flows and automated QA coverage. Impact: accelerated sprint delivery and improved release confidence.",
+        description: "Problem: legacy workflows slowed delivery. Approach: authored PRDs, mapped user flows in Figma, and aligned APIs with engineering. Solution: redesigned flows and automated QA coverage. Impact: faster releases and higher sprint reliability.",
         achievements: [
-            "Delivered 15+ PRDs with clear requirements and acceptance criteria.",
-            "Reached 90% sprint completion on reward system improvements.",
-            "Built 100+ Playwright tests and 500+ manual cases for critical flows."
+            "Delivered **15+ PRDs** with clear requirements and acceptance criteria.",
+            "Reached **90% sprint completion** on reward system improvements.",
+            "Built **100+ Playwright** tests and **500+ manual** cases for critical flows."
         ],
         highlight: true
     },
@@ -68,10 +69,10 @@ export const caseStudies = [
         title: "Automation at KarirLab",
         role: "Customer Success & Automation",
         duration: "2023 - 2024",
-        description: "Automated WhatsApp broadcast workflows to streamline employer communications and reduce manual overhead.",
+        description: "Problem: manual outreach reduced speed. Approach: automated WhatsApp broadcasts with Selenium. Solution: streamlined employer communication flows. Impact: faster delivery with measurable efficiency gains.",
         achievements: [
-            "Achieved 96% efficiency improvement with Selenium automation.",
-            "Sustained 95% customer satisfaction during process changes.",
+            "Achieved **96% efficiency improvement** with Selenium automation.",
+            "Sustained **95% customer satisfaction** during process changes.",
             "Built a lightweight dashboard to track engagement KPIs."
         ]
     },
@@ -79,7 +80,7 @@ export const caseStudies = [
         title: "Glints Academy Full-Stack Projects",
         role: "Full-Stack Participant",
         duration: "2021",
-        description: "Delivered product-ready web apps with end-to-end feature flows. Built responsive front-end with React.js and integrated APIs for real-world use cases.",
+        description: "Problem: deliver app features end-to-end. Approach: built responsive front-end in React.js and integrated APIs. Solution: shipped product-ready workflows. Impact: reliable demos and MVP readiness.",
         achievements: [
             "Shipped multiple React.js apps with clean UI and state management.",
             "Integrated REST APIs for authentication and data CRUD flows.",
@@ -90,9 +91,9 @@ export const caseStudies = [
         title: "Community Leadership at MSIB",
         role: "Communication & Community Engagement",
         duration: "2021 - 2022",
-        description: "Scaled communications for a national program and supported community activation events.",
+        description: "Problem: scale national program communications. Approach: coordinated outreach and partner engagement. Solution: streamlined community activation. Impact: consistent delivery across cohorts.",
         achievements: [
-            "Reached 65k+ students and 250 partner representatives.",
+            "Reached **65,000+ students** and **250+ partner representatives**.",
             "Coordinated a festival with 25+ partners across cohorts.",
             "Streamlined program communications and community support."
         ]
