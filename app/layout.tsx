@@ -63,10 +63,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.ico' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.png', type: 'image/png' },
     ],
+    apple: '/icons/icon-192.png',
   },
+  manifest: '/manifest.webmanifest',
 }
 
 export const viewport: Viewport = {
@@ -122,8 +125,7 @@ export default function RootLayout({
               (function() {
                 try {
                   var localTheme = localStorage.getItem('theme');
-                  var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  var theme = localTheme || (systemPrefersDark ? 'dark' : 'light');
+                  var theme = localTheme || 'light';
                   document.documentElement.setAttribute('data-theme', theme);
                 } catch (e) {}
               })();
