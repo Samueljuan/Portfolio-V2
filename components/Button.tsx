@@ -28,7 +28,7 @@ export function Button(props: ButtonLinkProps | ButtonButtonProps) {
         .join(' ')
 
     if ('href' in props) {
-        const { href, target, rel, download, ...rest } = props
+        const { href, target, rel, download, ...rest } = props as ButtonLinkProps
         const isExternal =
             href.startsWith('http') ||
             href.startsWith('mailto:') ||
