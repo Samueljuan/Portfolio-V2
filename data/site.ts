@@ -5,27 +5,28 @@ export type SiteConfig = {
     description: string
     keywords: string[]
     ogImage: string
-    favicon: string
     locale: string
     alternateLocale: string
 }
 
 export const siteConfig: SiteConfig = {
-    url: 'https://portfolio-v2-inky-phi.vercel.app',
+    url: 'https://samueljuan.vercel.app',
     name: 'Samuel Juan',
     title: 'Samuel Juan | Product Associate Portfolio | Technical Product Focus | Jakarta',
-    description: 'Samuel Juan, Product Associate at Kick Avenue Jakarta. PRD writing, Figma, Playwright QA, Agile leadership. End-to-end delivery; open to freelance.',
+    description: 'Portfolio Samuel Juan, Product Associate at Kick Avenue Jakarta. Technical focus: PRD, Figma, Playwright QA, Agile leadership, end-to-end delivery.',
     keywords: [
+        'samuel juan',
+        'portfolio product associate',
         'product associate jakarta',
         'technical product manager indonesia',
+        'technical product associate',
         'freelance product manager',
         'prd writing',
         'figma product design',
         'qa automation playwright',
         'agile product management'
     ],
-    ogImage: 'https://via.placeholder.com/1200x630?text=Samuel+Juan+Product+Portfolio',
-    favicon: '/favicon.ico',
-    locale: 'en_US',
-    alternateLocale: 'id_ID'
+    ogImage: '/og-image.svg',
+    locale: 'id_ID',
+    alternateLocale: 'en_US'
 }

@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: profile.tabTitle,
+    default: siteConfig.title,
     template: '%s',
   },
   description: siteConfig.description,
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
     },
   },
   alternates: {
@@ -60,12 +63,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: siteConfig.favicon, type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.png', type: 'image/png' },
     ],
-    apple: '/icons/icon-192.png',
   },
-  manifest: '/manifest.webmanifest',
 }
 
 export const viewport: Viewport = {
@@ -92,15 +93,22 @@ export default function RootLayout({
       '@type': 'Organization',
       name: profile.company,
     },
+    description: siteConfig.description,
+    image: siteConfig.ogImage,
     url: siteConfig.url,
+    email: profile.email,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Jakarta',
+      addressCountry: 'ID',
+    },
     sameAs: [
       'https://www.linkedin.com/in/samueljuan/',
-      'https://github.com/username-kamu',
     ],
   }
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

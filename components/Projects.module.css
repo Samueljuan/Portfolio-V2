@@ -78,6 +78,24 @@
     line-height: 1.6;
 }
 
+.descriptionList {
+    display: grid;
+    gap: 0.25rem;
+    color: var(--secondary);
+}
+
+.descriptionLine {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    background: rgba(15, 23, 42, 0.35);
+}
+
 .achievements {
     margin: 0;
     padding-left: 1.2rem;
@@ -87,6 +105,17 @@
 
 .achievementItem {
     margin-bottom: 0.5rem;
+}
+
+.caseLink {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.caseLink:hover {
+    color: var(--primary-hover);
 }
 
 @media (max-width: 768px) {

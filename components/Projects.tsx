@@ -37,7 +37,17 @@ export default function Projects() {
                                     <span className={styles.role}>{project.role}</span>
                                     <span className={styles.duration}>{project.duration}</span>
                                 </div>
-                                <p className={styles.description}>{renderWithEmphasis(project.description)}</p>
+                                {project.description.includes('\n') ? (
+                                    <div className={styles.descriptionList}>
+                                        {project.description.split('\n').map((line) => (
+                                            <p key={line} className={styles.descriptionLine}>
+                                                {renderWithEmphasis(line)}
+                                            </p>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <p className={styles.description}>{renderWithEmphasis(project.description)}</p>
+                                )}
                                 <ul className={styles.achievements}>
                                     {project.achievements.map((achievement) => (
                                         <li key={achievement} className={styles.achievementItem}>
@@ -45,6 +55,7 @@ export default function Projects() {
                                         </li>
                                     ))}
                                 </ul>
+                                {/* View Full Case Study link is intentionally hidden until URLs are ready. */}
                             </div>
                         </div>
                     ))}

@@ -7,6 +7,7 @@ export type Profile = {
     email: string
     linkedInUrl: string
     cvUrl: string
+    calendlyUrl: string
 }
 
 export type Experience = {
@@ -22,6 +23,9 @@ export type CaseStudy = {
     duration: string
     description: string
     achievements: string[]
+    imageSrc: string
+    imageAlt: string
+    caseStudyUrl?: string
     tags?: string[]
     highlight?: boolean
 }
@@ -39,7 +43,8 @@ export const profile: Profile = {
     location: "Jakarta, Indonesia",
     email: "samueljuan0619@gmail.com",
     linkedInUrl: "https://www.linkedin.com/in/samueljuan/",
-    cvUrl: "/Samuel-Juan-CV.pdf"
+    cvUrl: "/Samuel-Juan-CV.pdf",
+    calendlyUrl: "https://calendly.com/username/intro"
 }
 
 export const heroPhrases: readonly string[] = [
@@ -84,10 +89,10 @@ export const experiences: Experience[] = [
         role: "Product Associate",
         period: "Jul 2024 - Present",
         highlights: [
-            "Led **15+ PRDs** with clear requirements, user flows, and acceptance criteria.",
-            "Aligned Figma wireframes with engineering on scope, APIs, and edge cases.",
-            "Bridged product, engineering, and QA to remove delivery blockers.",
-            "Shipped reward system improvements with **90% sprint completion**.",
+            "Led **15+ PRDs** with requirements, user flows, and acceptance criteria in Jira + Confluence.",
+            "Aligned Figma wireframes with engineering, validating APIs and edge cases using Postman.",
+            "Accelerated the platform revamp timeline while reducing delivery risk across squads.",
+            "Improved sprint completion from ~60–70% to **90%+** on reward system delivery.",
             "Delivered **100+ Playwright** automated tests and **500+ manual** test cases."
         ]
     },
@@ -118,12 +123,15 @@ export const caseStudies: CaseStudy[] = [
         title: "Platform Revamp at Kick Avenue",
         role: "Product Associate",
         duration: "2024 - Present",
-        description: "Problem: legacy workflows slowed delivery. Approach: authored PRDs, mapped user flows in Figma, and aligned APIs with engineering. Solution: redesigned flows and automated QA coverage. Impact: faster releases and higher sprint reliability.",
+        description: "**Problem:** legacy workflows slowed delivery and sprint completion hovered around 60–70%.\n**Approach:** authored PRDs, mapped user flows in Figma, and aligned APIs with engineering.\n**Solution:** redesigned flows and scaled QA automation.\n**Impact:** sprint completion rose to **90%+** with lower delivery risk.",
         achievements: [
             "Delivered **15+ PRDs** with clear requirements and acceptance criteria.",
-            "Reached **90% sprint completion** on reward system improvements.",
+            "Improved sprint completion from ~60–70% to **90%+** on reward system delivery.",
             "Built **100+ Playwright** tests and **500+ manual** cases for critical flows."
         ],
+        imageSrc: "https://via.placeholder.com/800x400?text=Project+Screenshot",
+        imageAlt: "Screenshot",
+        caseStudyUrl: "#",
         tags: ["90% Sprint", "100+ Tests", "Full Revamp"],
         highlight: true
     },
@@ -131,61 +139,61 @@ export const caseStudies: CaseStudy[] = [
         title: "Automation at KarirLab",
         role: "Customer Success",
         duration: "2023 - 2024",
-        description: "Problem: manual outreach reduced speed. Approach: automated WhatsApp broadcasts with Selenium. Solution: streamlined employer communication flows. Impact: faster delivery with measurable efficiency gains.",
+        description: "**Problem:** manual outreach slowed response times.\n**Approach:** automated WhatsApp broadcasts with Selenium and monitored engagement.\n**Solution:** streamlined employer communication flows.\n**Impact:** **96% efficiency improvement** with consistent service levels.",
         achievements: [
             "Achieved **96% efficiency improvement** with Selenium automation.",
             "Sustained **95% customer satisfaction** during process changes.",
             "Built a lightweight dashboard to track engagement KPIs."
         ],
+        imageSrc: "https://via.placeholder.com/800x400?text=Project+Screenshot",
+        imageAlt: "Screenshot",
+        caseStudyUrl: "#",
         tags: ["96% Efficiency", "95% Satisfaction"]
     },
     {
-        title: "Glints Academy Full-Stack Projects",
+        title: "Industry Project Exploration",
         role: "Full-Stack Participant",
         duration: "2021",
-        description: "Problem: deliver app features end-to-end. Approach: built responsive front-end in React.js and integrated APIs. Solution: shipped product-ready workflows. Impact: reliable demos and MVP readiness.",
+        description: "**Problem:** deliver app features end-to-end under tight timelines.\n**Approach:** built responsive front-end in React.js and integrated APIs.\n**Solution:** shipped product-ready workflows.\n**Impact:** reliable demos and MVP readiness.",
         achievements: [
             "Shipped multiple React.js apps with clean UI and state management.",
             "Integrated REST APIs for authentication and data CRUD flows.",
             "Documented product requirements and demoed working MVPs."
         ],
+        imageSrc: "https://via.placeholder.com/800x400?text=Project+Screenshot",
+        imageAlt: "Screenshot",
+        caseStudyUrl: "#",
         tags: ["React.js Projects", "Front-end"]
     },
     {
         title: "Community Leadership at MSIB",
         role: "Communication & Community Engagement",
         duration: "2021 - 2022",
-        description: "Problem: scale national program communications. Approach: coordinated outreach and partner engagement. Solution: streamlined community activation. Impact: consistent delivery across cohorts.",
+        description: "**Problem:** scale national program communications.\n**Approach:** coordinated outreach and partner engagement at scale.\n**Solution:** streamlined community activation.\n**Impact:** reliable delivery for **65,000+ students** across cohorts.",
         achievements: [
             "Reached **65,000+ students** and **250+ partner representatives**.",
             "Coordinated a festival with 25+ partners across cohorts.",
             "Streamlined program communications and community support."
         ],
+        imageSrc: "https://via.placeholder.com/800x400?text=Project+Screenshot",
+        imageAlt: "Screenshot",
+        caseStudyUrl: "#",
         tags: ["65k+ Students", "National Scale"]
     }
 ]
 
 export const skillGroups: SkillGroup[] = [
     {
-        title: "Product & Strategy",
+        title: "Product & Delivery",
         skills: [
             "Product Management",
             "Technical Product Management",
-            "Product Development",
             "PRD Writing",
             "Requirement Analysis",
             "User Flows",
             "Feature Prioritization",
             "Roadmapping",
             "Acceptance Criteria",
-            "User Research",
-            "Process Improvement",
-            "Data Analysis"
-        ]
-    },
-    {
-        title: "Agile Delivery",
-        skills: [
             "Agile Methodologies",
             "Sprint Planning",
             "Grooming Sessions",
@@ -194,7 +202,7 @@ export const skillGroups: SkillGroup[] = [
         ]
     },
     {
-        title: "QA & Testing",
+        title: "Technical Execution",
         skills: [
             "Quality Assurance",
             "Test Automation",
@@ -203,32 +211,22 @@ export const skillGroups: SkillGroup[] = [
             "Regression Testing",
             "API Testing",
             "Postman",
-            "Selenium"
-        ]
-    },
-    {
-        title: "Design & UX",
-        skills: [
-            "User Experience (UX)",
-            "Figma",
-            "Dashboard Design"
-        ]
-    },
-    {
-        title: "Tools & Platforms",
-        skills: [
             "Jira",
-            "Confluence",
             "Git",
+            "Confluence",
             "DBeaver"
         ]
     },
     {
-        title: "Tech Stack",
+        title: "Design & Tools",
         skills: [
+            "User Experience (UX)",
+            "Figma",
+            "Dashboard Design",
             "React.js",
             "Next.js",
-            "JavaScript"
+            "JavaScript",
+            "Selenium"
         ]
     },
     {
@@ -236,16 +234,12 @@ export const skillGroups: SkillGroup[] = [
         skills: [
             "Cross-Functional Team Leadership",
             "Stakeholder Communication",
-            "Customer Success Management",
-            "Customer Satisfaction",
+            "User Research",
+            "Process Improvement",
+            "Data Analysis",
             "Community Management",
             "Program Coordination",
-            "Crisis Communications"
-        ]
-    },
-    {
-        title: "Languages",
-        skills: [
+            "Crisis Communications",
             "English",
             "Bahasa Indonesia"
         ]
