@@ -5,6 +5,7 @@ import styles from './Contact.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useContactForm } from '@/hooks/useContactForm'
 import { profile } from '@/data/portfolio'
+import { Button } from '@/components/Button'
 
 export default function Contact() {
     const { ref, isVisible } = useScrollAnimation()
@@ -144,13 +145,9 @@ export default function Contact() {
                             )}
                         </label>
                         <div className={styles.altSubmit}>
-                            <button
-                                type="submit"
-                                className="btn btn-primary"
-                                disabled={isSubmitting || !isFormValid}
-                            >
+                            <Button type="submit" disabled={isSubmitting || !isFormValid}>
                                 {isSubmitting ? 'Sending...' : 'Send Message'}
-                            </button>
+                            </Button>
                         </div>
                     </form>
                 </div>

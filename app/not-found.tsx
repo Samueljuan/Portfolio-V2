@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import styles from './not-found.module.css'
+import { Button } from '@/components/Button'
 
 export default function NotFound() {
     return (
@@ -10,9 +10,7 @@ export default function NotFound() {
                 <p className={styles.text}>
                     The page you are looking for doesn’t exist or has been moved.
                 </p>
-                <Link href="/" className="btn btn-primary">
-                    Back to Home
-                </Link>
+                <Button href="/">Back to Home</Button>
             </div>
         </section>
     )

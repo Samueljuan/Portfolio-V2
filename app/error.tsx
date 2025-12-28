@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
 import styles from './error.module.css'
+import { Button } from '@/components/Button'
 
 export default function Error({
     error,
@@ -24,9 +25,9 @@ export default function Error({
                     An unexpected error occurred. Please try again or return home.
                 </p>
                 <div className={styles.actions}>
-                    <button type="button" className="btn btn-primary" onClick={reset}>
+                    <Button type="button" onClick={reset}>
                         Try Again
-                    </button>
+                    </Button>
                     <Link href="/" className={styles.link}>
                         Back to Home
                     </Link>

@@ -1,7 +1,8 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { isValidEmail, isValidPhone, normalizePhone } from '@/utils/validation'
+import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 
 type StatusType = 'success' | 'error' | ''
 type FieldErrors = {
@@ -20,11 +21,11 @@ export function useContactForm(formspreeEndpoint?: string) {
     const [phoneValue, setPhoneValue] = useState('')
     const [subjectValue, setSubjectValue] = useState('')
     const [messageValue, setMessageValue] = useState('')
-    const emailValidationTimer = useRef<number | null>(null)
-    const phoneValidationTimer = useRef<number | null>(null)
+    const debouncedEmail = useDebouncedValue(emailValue, 50)
+    const debouncedPhone = useDebouncedValue(phoneValue, 50)
 
     useEffect(() => {
-        if (!emailValue) {
+        if (!debouncedEmail) {
             setFieldErrors((prev) => {
                 if (!prev.email) {
                     return prev
@@ -33,26 +34,16 @@ export function useContactForm(formspreeEndpoint?: string) {
             })
             return
         }
-        if (emailValidationTimer.current) {
-            window.clearTimeout(emailValidationTimer.current)
-        }
-        emailValidationTimer.current = window.setTimeout(() => {
-            const nextError = isValidEmail(emailValue.trim())
-                ? undefined
-                : 'Please enter a valid email address.'
-            setFieldErrors((prev) => {
-                if (prev.email === nextError) {
-                    return prev
-                }
-                return { ...prev, email: nextError }
-            })
-        }, 50)
-        return () => {
-            if (emailValidationTimer.current) {
-                window.clearTimeout(emailValidationTimer.current)
+        const nextError = isValidEmail(debouncedEmail.trim())
+            ? undefined
+            : 'Please enter a valid email address.'
+        setFieldErrors((prev) => {
+            if (prev.email === nextError) {
+                return prev
             }
-        }
-    }, [emailValue])
+            return { ...prev, email: nextError }
+        })
+    }, [debouncedEmail])
 
     const handlePhoneChange = useCallback(
         (value: string) => {
@@ -62,7 +53,7 @@ export function useContactForm(formspreeEndpoint?: string) {
     )
 
     useEffect(() => {
-        if (!phoneValue) {
+        if (!debouncedPhone) {
             setFieldErrors((prev) => {
                 if (!prev.phone) {
                     return prev
@@ -71,26 +62,16 @@ export function useContactForm(formspreeEndpoint?: string) {
             })
             return
         }
-        if (phoneValidationTimer.current) {
-            window.clearTimeout(phoneValidationTimer.current)
-        }
-        phoneValidationTimer.current = window.setTimeout(() => {
-            const nextError = isValidPhone(phoneValue)
-                ? undefined
-                : 'Please enter a valid phone number.'
-            setFieldErrors((prev) => {
-                if (prev.phone === nextError) {
-                    return prev
-                }
-                return { ...prev, phone: nextError }
-            })
-        }, 50)
-        return () => {
-            if (phoneValidationTimer.current) {
-                window.clearTimeout(phoneValidationTimer.current)
+        const nextError = isValidPhone(debouncedPhone)
+            ? undefined
+            : 'Please enter a valid phone number.'
+        setFieldErrors((prev) => {
+            if (prev.phone === nextError) {
+                return prev
             }
-        }
-    }, [phoneValue])
+            return { ...prev, phone: nextError }
+        })
+    }, [debouncedPhone])
 
     const clearFieldError = useCallback((field: keyof FieldErrors) => {
         setFieldErrors((prev) => ({ ...prev, [field]: undefined }))
@@ -112,6 +93,7 @@ export function useContactForm(formspreeEndpoint?: string) {
     const handleSubmit = useCallback(
         async (event: React.FormEvent<HTMLFormElement>) => {
             event.preventDefault()
+            const formElement = event.currentTarget
             const fromEmail = emailValue.trim()
             const phone = normalizePhone(phoneValue)
             const subject = subjectValue.trim()
@@ -142,6 +124,11 @@ export function useContactForm(formspreeEndpoint?: string) {
                 setFieldErrors(nextErrors)
                 setStatusMessage('')
                 setStatusType('')
+                const firstField = ['email', 'phone', 'subject', 'message'].find((field) => nextErrors[field as keyof FieldErrors])
+                if (firstField) {
+                    const fieldElement = formElement.querySelector(`[name="${firstField}"]`) as HTMLElement | null
+                    fieldElement?.focus()
+                }
                 return
             }
 
@@ -195,16 +182,7 @@ export function useContactForm(formspreeEndpoint?: string) {
                 }, 5000)
             }
         },
-        [
-            emailValue,
-            phoneValue,
-            subjectValue,
-            messageValue,
-            formspreeEndpoint,
-            isValidEmail,
-            isValidPhone,
-            normalizePhone,
-        ]
+        [emailValue, phoneValue, subjectValue, messageValue, formspreeEndpoint]
     )
 
     return {

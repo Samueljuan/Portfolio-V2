@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 import styles from './Header.module.css'
@@ -16,6 +16,7 @@ const navLinks = [
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const menuRef = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,6 +27,44 @@ export default function Header() {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
+
+    useEffect(() => {
+        if (!isMenuOpen) {
+            return
+        }
+        const menu = menuRef.current
+        if (!menu) {
+            return
+        }
+        const focusable = Array.from(
+            menu.querySelectorAll<HTMLElement>('a, button, [tabindex]:not([tabindex="-1"])')
+        )
+        const first = focusable[0]
+        const last = focusable[focusable.length - 1]
+        first?.focus()
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                setIsMenuOpen(false)
+                return
+            }
+            if (event.key !== 'Tab' || focusable.length === 0) {
+                return
+            }
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault()
+                last?.focus()
+                return
+            }
+            if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault()
+                first?.focus()
+            }
+        }
+
+        document.addEventListener('keydown', handleKeyDown)
+        return () => document.removeEventListener('keydown', handleKeyDown)
+    }, [isMenuOpen])
 
     const handleToggle = () => setIsMenuOpen((prev) => !prev)
     const handleClose = () => setIsMenuOpen(false)
@@ -65,6 +104,7 @@ export default function Header() {
             </div>
             <div
                 id="mobile-menu"
+                ref={menuRef}
                 className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}
                 aria-hidden={!isMenuOpen}
             >

@@ -5,6 +5,7 @@ import styles from './Hero.module.css'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { useTypewriter } from '@/hooks/useTypewriter'
 import { heroPhrases, heroSubheadline, heroSupporting, profile } from '@/data/portfolio'
+import { Button } from '@/components/Button'
 
 export default function Hero() {
     const { ref, isVisible } = useScrollAnimation()
@@ -29,16 +30,10 @@ export default function Hero() {
                         <p className={styles.supporting}>{heroSupporting}</p>
                         <p className={styles.subheadline}>{heroSubheadline}</p>
                         <div className={styles.actions}>
-                            <Link href="#projects" className="btn btn-primary">
-                                View Case Studies
-                            </Link>
-                            <a
-                                href={profile.cvUrl}
-                                className="btn btn-primary"
-                                download="Samuel-Juan-CV.pdf"
-                            >
+                            <Button href="#projects">View Case Studies</Button>
+                            <Button href={profile.cvUrl} download="Samuel-Juan-CV.pdf">
                                 Download CV
-                            </a>
+                            </Button>
                             <Link href="#contact" className={styles.btnOutline}>
                                 Contact
                             </Link>
